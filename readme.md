@@ -7,6 +7,12 @@ The Aero themes are a pair of light and dark themes which balance elegance
 with practicality. They were originally part of [Aero
 Emacs](https://gitlab.com/thornjad/aero) but were distilled for wider use.
 
+## Preview
+
+![Aero Theme](./images/aero-light-preview.png)
+
+![Aero Dark Theme](./images/aero-dark-preview.png)
+
 ## Installation
 
 The Aero themes are not available on MELPA at this time, since they're still
