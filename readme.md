@@ -6,6 +6,10 @@ _Version:_ 1.0.0<br>
 The Aero themes are a pair of light and dark themes which balance elegance
 with practicality. They were originally part of [Aero
 Emacs](https://gitlab.com/thornjad/aero) but were distilled for wider use.
+The light theme draws color from the vibrancy of northern Minnesota in
+Autumn, while the dark theme draws inspiration from my own [ClearNight
+Retro](https://github.com/ClearNight/clearnight-retro-syntax) for
+[Atom](https://atom.io).
 
 ## Preview
 
