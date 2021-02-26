@@ -42,7 +42,7 @@
 ;;
 ;; Either way, activate the theme with
 ;;
-;;     (load-theme 'aero-light)
+;;     (load-theme 'aero)
 ;;     ;; or, for the dark variant:
 ;;     (load-theme 'aero-dark)
 
@@ -52,7 +52,7 @@
   "Supergroup for theme options"
   :group 'faces)
 
-(deftheme aero-light)
+(deftheme aero)
 (let ((class '((class color) (min-colors #xFF)))
       (aero-bg             "#edeceb")
       (aero-fg             "#525C5A")
@@ -119,7 +119,7 @@
       (aero-brilliant-cyan    "#46d9ff")
       (aero-brilliant-red       "#5f0000"))
   (custom-theme-set-faces
-   'aero-light
+   'aero
    ;;`(default ((t (:background ,aero-bg :foreground ,aero-fg :font "Victor Mono" :height 150))))
    `(default ((t (:background ,aero-bg :foreground ,aero-fg :font
 			            ,(cond
