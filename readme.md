@@ -24,7 +24,7 @@ Alternatively, this repository may be cloned into your Emacs's
 
 Either way, activate the theme with
 
-        (load-theme 'aero-light)
+        (load-theme 'aero)
         ;; or, for the dark variant:
         (load-theme 'aero-dark)
 
