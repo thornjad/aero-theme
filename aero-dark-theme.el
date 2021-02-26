@@ -48,8 +48,8 @@
       (aero-act1 "#222226")
       (aero-space-base "#b2b2b2")
       (aero-space-base-dim "#686868")
-      (aero-bg-magenta "#5d4d7a")
-      (aero-space-magenta "#bc6ec5")
+      ;; (aero-bg-magenta "#5d4d7a")
+      ;; (aero-space-magenta "#bc6ec5")
 
       (aero-normal-black "#282828")
       (aero-normal-white "#e7e5eb")
@@ -58,13 +58,13 @@
       (aero-normal-yellow "#C8A827")
       (aero-normal-green "#819a2c")
       (aero-normal-blue "#4f97d7")
-      (aero-normal-teal "#8ebcbb")
+      ;; (aero-normal-teal "#8ebcbb")
       (aero-normal-cyan "#8ec07c")
       (aero-normal-magenta "#bbb8d8")
       (aero-normal-mint "#a3be8c")
 
-      (aero-bright-black "#928374")
-      (aero-bright-white "#ffffd7")
+      ;; (aero-bright-black "#928374")
+      ;; (aero-bright-white "#ffffd7")
       (aero-bright-red "#dd8844")
       (aero-bright-orange "#dd8117")
       (aero-bright-yellow "#fabd2f")
@@ -73,14 +73,14 @@
       (aero-bright-cyan "#8ec07c")
       (aero-bright-magenta "#b76cc4")
 
-      (aero-intense-green "#5f875f")
+      ;; (aero-intense-green "#5f875f")
       (aero-intense-burgundy "#5f081e")
       (aero-brilliant-black "#000000")
       (aero-brilliant-white "#ffffff")
       (aero-brilliant-green "#005f00")
-      (aero-brilliant-yellow "#d7d7af")
-      (aero-brilliant-blue "#00005f")
-      (aero-brilliant-cyan "#46d9ff")
+      ;; (aero-brilliant-yellow "#d7d7af")
+      ;; (aero-brilliant-blue "#00005f")
+      ;; (aero-brilliant-cyan "#46d9ff")
       (aero-brilliant-red "#5f0000"))
   (custom-theme-set-faces
    'aero-dark
@@ -610,4 +610,6 @@
    ;; auto-dim-other-buffers
    `(auto-dim-other-buffers-face ((t (:background ,aero-normal-black))))))
 
+(provide-theme 'aero-dark)
+(provide 'aero-dark-theme)
 ;;; aero-dark-theme.el ends here
