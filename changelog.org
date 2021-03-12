@@ -1,0 +1,14 @@
+#+title: Aero Theme Changelog
+
+** [1.1.0] - 2021-03-11
+*** Added
+- This changelog
+- Set up =org-mode= to use variable-pitch most of the time, but retain fixed-pitch in code blocks and the like.
+- Defined variable-pitch's font family chain
+- Improved default face's font family chain by using the appropriate =x-list-fonts= to check for installed fonts.
+
+*** Fixed
+- Ported the light theme's window-divider setup to the dark theme
+
+** [1.0.0] - 2021-02-26
+Initial release as a standalone package.
