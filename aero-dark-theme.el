@@ -653,10 +653,10 @@
      `(org-level-7 ((t (,@headline ,@variable-tuple))))
      `(org-level-6 ((t (,@headline ,@variable-tuple))))
      `(org-level-5 ((t (,@headline ,@variable-tuple))))
-     `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.1))))
-     `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.25))))
-     `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.5))))
-     `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.75))))
+     `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.05))))
+     `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.1))))
+     `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.15))))
+     `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.2))))
      `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
 
   ;; Ensure org-mode uses variable pitch
