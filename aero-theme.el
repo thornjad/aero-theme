@@ -132,11 +132,18 @@
   (custom-theme-set-faces
    'aero
    ;;`(default ((t (:background ,aero-bg :foreground ,aero-fg :font "Victor Mono" :height 150))))
-   `(default ((t (:background ,aero-bg :foreground ,aero-fg :font
-			            ,(cond
-				            ((member "Victor Mono" (font-family-list)) "Victor Mono")
-				            ((member "Ubuntu Mono" (font-family-list)) "Ubuntu Mono")
-				            (t "monospace")) :height 120))))
+   `(default ((t (:background ,aero-bg :foreground ,aero-fg
+                  :font ,(cond
+				                  ((x-list-fonts "Victor Mono") "Victor Mono")
+				                  ((x-list-fonts "Ubuntu Mono") "Ubuntu Mono")
+				                  (t "monospace"))
+                  :height 120))))
+   `(variable-pitch
+     ((t :font ,(cond ((x-list-fonts "Ubuntu Light") "Ubuntu Light")
+                      ((x-list-fonts "Source Sans Pro") "Source Sans Pro")
+                      ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
+                      ((x-list-fonts "Roboto") "Roboto")
+                      (t "Sans Serif")))))
    `(cursor ((t (:background ,aero-cursor-bg))))
    `(mode-line
      ((t (:background ,aero-bg :foreground ,aero-space-base
