@@ -498,6 +498,8 @@
    `(markdown-header-face-4 ((t (:foreground ,aero-bright-red))))
    `(markdown-header-face-5 ((t (:foreground ,aero-normal-green))))
    `(markdown-header-face-6 ((t (:foreground ,aero-normal-blue))))
+   `(markdown-pre-face ((t (:inherit fixed-pitch))))
+   `(markdown-inline-code-face ((t (:inherit fixed-pitch))))
 
    ;; ace-jump-mode
    `(ace-jump-face-background ((t (:foreground ,aero-base3 :background ,aero-bg :inverse-video nil))))
