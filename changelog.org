@@ -1,5 +1,12 @@
 #+title: Aero Theme Changelog
 
+** Unreleased
+*** Added
+- unified eshell-prompt-extras git-dir coloring with normal eshell
+
+*** Fixed
+- Stopped using deprecated eshell faces
+
 ** [1.1.1] - 2021-03-11
 *** Fixed
 - Ensure fixed pitch in markdown code

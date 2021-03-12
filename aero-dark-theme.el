@@ -598,17 +598,20 @@
 
    ;; eshell
    `(eshell-prompt ((t (:foreground ,aero-normal-blue))))
-   `(eshell-ls-archive-face ((t (:foreground ,aero-grey4))))
-   `(eshell-ls-backup-face ((t (:foreground ,aero-grey3))))
-   `(eshell-ls-clutter-face ((t (:foreground ,aero-bright-yellow :weight bold))))
-   `(eshell-ls-directory-face ((t (:foreground ,aero-bright-yellow))))
-   `(eshell-ls-executable-face ((t (:weight bold))))
-   `(eshell-ls-missing-face ((t (:foreground ,aero-bright-red :bold t))))
-   `(eshell-ls-product-face ((t (:foreground ,aero-bright-red))))
-   `(eshell-ls-readonly-face ((t (:foreground ,aero-grey4))))
-   `(eshell-ls-special-face ((t (:foreground ,aero-bright-yellow :bold t))))
-   `(eshell-ls-symlink-face ((t (:foreground ,aero-bright-red))))
-   `(eshell-ls-unreadable-face ((t (:foreground ,aero-bright-red :bold t))))
+   `(eshell-ls-archive ((t (:foreground ,aero-grey4))))
+   `(eshell-ls-backup ((t (:foreground ,aero-grey3))))
+   `(eshell-ls-clutter ((t (:foreground ,aero-bright-yellow :weight bold))))
+   `(eshell-ls-directory ((t (:foreground ,aero-normal-yellow))))
+   `(eshell-ls-executable ((t (:weight bold))))
+   `(eshell-ls-missing ((t (:foreground ,aero-bright-red :bold t))))
+   `(eshell-ls-product ((t (:foreground ,aero-bright-red))))
+   `(eshell-ls-readonly ((t (:foreground ,aero-grey4))))
+   `(eshell-ls-special ((t (:foreground ,aero-bright-yellow :bold t))))
+   `(eshell-ls-symlink ((t (:foreground ,aero-bright-red))))
+   `(eshell-ls-unreadable ((t (:foreground ,aero-bright-red :bold t))))
+
+   ;; eshell-prompt-extras
+   `(epe-git-dir-face ((t (:inherit eshell-ls-directory :bold t))))
 
    ;; wgrep
    `(wgrep-delete-face ((t (:strike-through ,aero-bright-red))))
