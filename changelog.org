@@ -1,6 +1,10 @@
 #+title: Aero Theme Changelog
 
-** [1.1.0] - 2021-03-11
+** [1.1.1] - 2021-03-11
+*** Fixed
+- Ensure fixed pitch in markdown code
+
+** [1.1.0] - 2021-03-10
 *** Added
 - This changelog
 - Set up =org-mode= to use variable-pitch most of the time, but retain fixed-pitch in code blocks and the like.
