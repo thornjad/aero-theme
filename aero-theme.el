@@ -133,17 +133,19 @@
    'aero
    ;;`(default ((t (:background ,aero-bg :foreground ,aero-fg :font "Victor Mono" :height 150))))
    `(default ((t (:background ,aero-bg :foreground ,aero-fg
-                  :font ,(cond
-				                  ((x-list-fonts "Victor Mono") "Victor Mono")
-				                  ((x-list-fonts "Ubuntu Mono") "Ubuntu Mono")
-				                  (t "monospace"))
+                  :font ,(when (window-system)
+                           (cond
+				                    ((x-list-fonts "Victor Mono") "Victor Mono")
+				                    ((x-list-fonts "Ubuntu Mono") "Ubuntu Mono")
+				                    (t "monospace")))
                   :height 120))))
    `(variable-pitch
-     ((t :font ,(cond ((x-list-fonts "Ubuntu Light") "Ubuntu Light")
-                      ((x-list-fonts "Source Sans Pro") "Source Sans Pro")
-                      ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
-                      ((x-list-fonts "Roboto") "Roboto")
-                      (t "Sans Serif")))))
+     ((t :font ,(when (window-system)
+                  (cond ((x-list-fonts "Ubuntu Light") "Ubuntu Light")
+                        ((x-list-fonts "Source Sans Pro") "Source Sans Pro")
+                        ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
+                        ((x-list-fonts "Roboto") "Roboto")
+                        (t "Sans Serif"))))))
    `(cursor ((t (:background ,aero-cursor-bg))))
    `(mode-line
      ((t (:background ,aero-bg :foreground ,aero-space-base
@@ -689,12 +691,13 @@
 
   ;; Org mode headlines
   (let* ((variable-tuple
-          (cond ((x-list-fonts "Ubuntu Light")     '(:font "Ubuntu Light"))
-                ((x-list-fonts "Source Sans Pro")  '(:font "Source Sans Pro"))
-                ((x-list-fonts "Fira Code Retina") '(:font "Fira Code Retina"))
-                ((x-list-fonts "Roboto")           '(:font "Roboto"))
-                ((x-family-fonts "Sans Serif")     '(:family "Sans Serif"))
-                (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
+          (when (window-system)
+            (cond ((x-list-fonts "Ubuntu Light")     '(:font "Ubuntu Light"))
+                  ((x-list-fonts "Source Sans Pro")  '(:font "Source Sans Pro"))
+                  ((x-list-fonts "Fira Code Retina") '(:font "Fira Code Retina"))
+                  ((x-list-fonts "Roboto")           '(:font "Roboto"))
+                  ((x-family-fonts "Sans Serif")     '(:family "Sans Serif"))
+                  (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro.")))))
          (base-font-color     (face-foreground 'default nil 'default))
          (headline           `(:inherit default :weight bold :foreground ,base-font-color)))
     (custom-theme-set-faces
