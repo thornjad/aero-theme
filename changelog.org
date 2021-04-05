@@ -1,11 +1,12 @@
 #+title: Aero Theme Changelog
 
-** Unreleased
+** [1.1.2] - 2021-04-05
 *** Added
 - unified eshell-prompt-extras git-dir coloring with normal eshell
 
 *** Fixed
 - Stopped using deprecated eshell faces
+- Only choose font when GUI
 
 ** [1.1.1] - 2021-03-11
 *** Fixed
