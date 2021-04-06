@@ -1,5 +1,9 @@
 #+title: Aero Theme Changelog
 
+** Unreleased
+*** Changed
+- Use background highlighting for light-theme diff instead of box
+
 ** [1.1.2] - 2021-04-05
 *** Added
 - unified eshell-prompt-extras git-dir coloring with normal eshell

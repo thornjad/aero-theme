@@ -118,17 +118,19 @@
 
       (aero-faded-red "#aa2222")
       (aero-faded-red-dim "#eecccc")
+      (aero-faded-orange-dim "#edd5a8")
       (aero-faded-green "#22aa22")
       (aero-faded-green-dim "#cceecc")
 
       ;; (aero-intense-green  "#5f875f")
       (aero-brilliant-black     "#000000")
       (aero-brilliant-white     "#ffffff")
-      (aero-brilliant-green     "#005f00")
+      ;; (aero-brilliant-green     "#005f00")
       ;; (aero-brilliant-yellow  "#d7d7af")
       ;; (aero-brilliant-blue    "#00005f")
       ;; (aero-brilliant-cyan    "#46d9ff")
-      (aero-brilliant-red       "#5f0000"))
+      ;; (aero-brilliant-red       "#5f0000")
+      )
   (custom-theme-set-faces
    'aero
    ;;`(default ((t (:background ,aero-bg :foreground ,aero-fg :font "Victor Mono" :height 150))))
@@ -266,10 +268,10 @@
    `(ag-match-face ((t (:foreground ,aero-bright-red))))
 
    ;; diffs
-   `(diff-changed ((t (:foreground ,aero-fg))))
-   `(diff-added ((t (:foreground ,aero-fg))))
+   `(diff-changed ((t (:background ,aero-faded-orange-dim))))
+   `(diff-added ((t (:background ,aero-faded-green-dim))))
    `(diff-refine-added ((t (:inherit diff-added :weight bold))))
-   `(diff-removed ((t (:foreground ,aero-normal-black))))
+   `(diff-removed ((t (:background ,aero-faded-red-dim))))
    `(diff-refine-removed ((t (:inherit diff-removed :weight bold))))
    `(diff-indicator-changed ((t (:inherit diff-changed))))
    `(diff-indicator-added ((t (:inherit diff-added))))
@@ -278,9 +280,9 @@
    ;; smerge
    `(smerge-upper ((t (:background nil))))
    `(smerge-lower ((t (:background nil))))
-   `(smerge-refined-added ((t (:box ,aero-brilliant-green))))
-   `(smerge-refined-changed ((t (:box ,aero-normal-red))))
-   `(smerge-refined-removed ((t (:box ,aero-brilliant-red))))
+   `(smerge-refined-added ((t (:inherit diff-added))))
+   `(smerge-refined-changed ((t (:inherit diff-changed))))
+   `(smerge-refined-removed ((t (:inherit diff-removed))))
    `(smerge-base ((t (:background nil))))
    `(smerge-markers
      ((t (:inherit font-lock-comment-face :weight bold :background ,aero-base0))))

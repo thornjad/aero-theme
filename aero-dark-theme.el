@@ -75,7 +75,7 @@
       (aero-bright-magenta "#b76cc4")
 
       ;; (aero-intense-green "#5f875f")
-      (aero-intense-burgundy "#5f081e")
+      ;; (aero-intense-burgundy "#5f081e")
       (aero-brilliant-black "#000000")
       (aero-brilliant-white "#ffffff")
       (aero-brilliant-green "#005f00")
@@ -232,9 +232,9 @@
    ;; smerge
    `(smerge-upper ((t (:background nil))))
    `(smerge-lower ((t (:background nil))))
-   `(smerge-refined-added ((t (:background ,aero-brilliant-green))))
-   `(smerge-refined-changed ((t (:background ,aero-intense-burgundy))))
-   `(smerge-refined-removed ((t (:background ,aero-brilliant-red))))
+   `(smerge-refined-added ((t (:inherit diff-added))))
+   `(smerge-refined-changed ((t (:inherit diff-changed))))
+   `(smerge-refined-removed ((t (:inherit diff-removed))))
    `(smerge-base ((t (:background nil))))
    `(smerge-markers
      ((t (:inherit font-lock-comment-face :weight bold :background ,aero-grey0))))
