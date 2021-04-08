@@ -41,6 +41,7 @@
       (aero-fg "#d1c8b2")
 
       (aero-grey0 "#373426")
+      (aero-grey05 "#474436")
       (aero-grey1 "#4e4b3d")
       (aero-grey2 "#6b6b6b")
       (aero-grey3 "#979797")
@@ -193,7 +194,7 @@
    `(indent-guide-face ((t (:background ,aero-bg :foreground ,aero-grey0 :slant normal))))
 
    ;; fill column indicator
-   `(fill-column-indicator ((t (:background ,aero-bg :foreground ,aero-grey0))))
+   `(fill-column-indicator ((t (:background ,aero-bg :foreground ,aero-grey05))))
 
    ;; smartparens
    `(sp-pair-overlay-face ((t (:background ,aero-grey1))))
