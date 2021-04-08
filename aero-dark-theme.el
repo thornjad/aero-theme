@@ -50,7 +50,7 @@
       (aero-act1 "#222226")
       (aero-space-base "#b2b2b2")
       (aero-space-base-dim "#686868")
-      ;; (aero-bg-magenta "#5d4d7a")
+      (aero-bg-magenta "#5d4d7a")
       ;; (aero-space-magenta "#bc6ec5")
 
       (aero-normal-black "#282828")
@@ -195,6 +195,9 @@
 
    ;; fill column indicator
    `(fill-column-indicator ((t (:background ,aero-bg :foreground ,aero-grey05))))
+
+   ;; pulse
+   `(pulse-highlight-start-face ((t (:background ,aero-bg-magenta))))
 
    ;; smartparens
    `(sp-pair-overlay-face ((t (:background ,aero-grey1))))
