@@ -8,6 +8,9 @@
 - Use background highlighting for light-theme diff instead of box
 - Brighten the fill-column line a little
 
+*** Fixed
+- Dark mode region coloring was too bright due to a theme typo
+
 ** [1.1.2] - 2021-04-05
 *** Added
 - unified eshell-prompt-extras git-dir coloring with normal eshell

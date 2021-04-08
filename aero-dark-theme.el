@@ -108,7 +108,7 @@
    `(tab-bar-tab ((t (:inherit mode-line))))
    `(tab-bar-tab-inactive ((t (:inherit mode-line-inactive :slant italic))))
    `(hl-line ((t (:background ,aero-grey0))))
-   `(region ((t (:background ,aero-grey1 :background ,aero-grey5))))
+   `(region ((t (:background ,aero-grey1 :foreground ,aero-grey5))))
    `(secondary-selection ((t (:background ,aero-grey0))))
    `(minibuffer-prompt ((t (:background ,aero-bg :foreground ,aero-normal-green :bold t))))
    `(vertical-border ((t (:foreground ,aero-grey1 :background ,aero-grey1))))
