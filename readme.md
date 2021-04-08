@@ -1,7 +1,7 @@
 # aero-theme - A practical light theme
 
 _Author:_ Jade Michael Thornton<br>
-_Version:_ 1.1.2<br>
+_Version:_ 1.1.3<br>
 
 The Aero themes are a pair of light and dark themes which balance elegance
 with practicality. They were originally part of [Aero
