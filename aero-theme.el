@@ -65,8 +65,9 @@
 
 (deftheme aero)
 (let ((class '((class color) (min-colors #xFF)))
-      (aero-bg             "#edeceb")
-      (aero-fg             "#525C5A")
+      (aero-bg "#fbf8ef")
+      ;; (aero-bg-alt "#edeceb")
+      (aero-fg "#525C5A")
 
       (aero-space-base     "#655370")
       (aero-space-base-dim "#a094a2")
@@ -148,6 +149,7 @@
                         ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
                         ((x-list-fonts "Roboto") "Roboto")
                         (t "Sans Serif"))))))
+   `(fringe ((t (:background ,aero-bg))))
    `(cursor ((t (:background ,aero-cursor-bg))))
    `(mode-line
      ((t (:background ,aero-bg :foreground ,aero-space-base
@@ -603,6 +605,17 @@
    `(magit-signature-untrusted ((t (:foreground ,aero-normal-blue))))
    `(magit-tag ((t (:foreground ,aero-bright-yellow))))
 
+   ;; git-gutter and git-gutter-fringe
+   `(git-gutter:added ((,class (:inherit diff-added))))
+   `(git-gutter:deleted ((,class (:inherit diff-removed))))
+   `(git-gutter:modified ((,class (:inherit diff-changed))))
+   `(git-gutter+-added ((,class (:inherit diff-added))))
+   `(git-gutter+-deleted ((,class (:inherit diff-removed))))
+   `(git-gutter+-modified ((,class (:inherit diff-changed))))
+   `(git-gutter-fr:added ((,class (:inherit diff-added))))
+   `(git-gutter-fr:deleted ((,class (:inherit diff-removed))))
+   `(git-gutter-fr:modified ((,class (:inherit diff-changed))))
+
    ;; flyspell
    `(flyspell-duplicate ((t (:underline (:color ,aero-base3 :style line)))))
    `(flyspell-incorrect ((t (:underline (:color ,aero-bright-red :style line)))))
@@ -611,6 +624,9 @@
    `(flycheck-warning ((t (:underline (:color ,aero-bright-yellow :style line)))))
    `(flycheck-error ((t (:underline (:color ,aero-bright-red :style line)))))
    `(flycheck-info ((t (:underline (:color ,aero-bright-green :style line)))))
+   `(flycheck-fringe-error ((,class (:inherit error :weight bold))))
+   `(flycheck-fringe-info ((,class (:inherit font-lock-keyword-face :weight bold))))
+   `(flycheck-fringe-warning ((,class (:inherit warning :weight bold))))
 
    ;; langtool
    `(langtool-errline ((t (:foreground ,aero-normal-black :background ,aero-bright-red))))
