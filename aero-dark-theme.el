@@ -88,7 +88,7 @@
       (aero-brilliant-red "#5f0000"))
   (custom-theme-set-faces
    'aero-dark
-   `(default ((t (:background ,aero-bg :foreground ,aero-fg
+   `(default ((t (:background ,aero-bg-alt :foreground ,aero-fg
                   :font ,(when (window-system)
                            (cond
 				                    ((x-list-fonts "Victor Mono") "Victor Mono")
@@ -111,7 +111,7 @@
    `(tab-bar-tab ((t (:inherit mode-line))))
    `(tab-bar-tab-inactive ((t (:inherit mode-line-inactive :slant italic))))
    `(hl-line ((t (:background ,aero-grey0))))
-   `(region ((t (:background ,aero-grey1 :foreground ,aero-grey5))))
+   `(region ((t (:background ,aero-grey6 :foreground ,aero-grey5))))
    `(secondary-selection ((t (:background ,aero-grey0))))
    `(minibuffer-prompt ((t (:background ,aero-bg :foreground ,aero-normal-green :bold t))))
    `(vertical-border ((t (:foreground ,aero-grey1 :background ,aero-grey1))))
@@ -545,7 +545,7 @@
    `(magit-refname ((t (:foreground ,aero-grey3))))
    `(magit-section-heading ((t (:foreground ,aero-bright-yellow :weight bold))))
    `(magit-section-heading-selection ((t (:foreground ,aero-bright-yellow))))
-   `(magit-section-highlight ((t (:background ,aero-grey0))))
+   `(magit-section-highlight ((t (:background ,aero-grey6))))
    `(magit-sequence-drop ((t (:foreground ,aero-bright-yellow))))
    `(magit-sequence-head ((t (:foreground ,aero-normal-blue))))
    `(magit-sequence-part ((t (:foreground ,aero-bright-yellow))))
