@@ -666,6 +666,10 @@
    `(widget-field ((t (:foreground ,aero-fg :background ,aero-base1))))
    `(widget-single-line-field ((t (:foreground ,aero-fg :background ,aero-base1))))
 
+   ;; Solaire
+   `(solaire-mode-line-face ((t (:inherit mode-line))))
+   `(solaire-mode-line-inactive-face ((t (:inherit mode-line-inactive))))
+
    ;; eshell
    `(eshell-prompt ((t (:foreground ,aero-normal-blue))))
    `(eshell-ls-archive ((t (:foreground ,aero-base4))))
