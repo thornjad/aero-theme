@@ -6,6 +6,7 @@
 
 *** Changed
 - Tweak to background and highlight coloring in dark theme
+- Improved light theme header-line display
 
 *** Fixed
 - Fringe coloring

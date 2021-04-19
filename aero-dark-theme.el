@@ -106,7 +106,8 @@
    `(cursor ((t (:background ,aero-fg))))
    `(mode-line ((t (:background ,aero-act1 :foreground ,aero-space-base :box (:line-width 3 :color ,aero-act1)))))
    `(mode-line-inactive ((t (:background ,aero-bg :foreground ,aero-space-base-dim :box (:line-width 3 :color ,aero-bg)))))
-   `(header-line ((t (:inherit mode-line :box (:line-width 1 :color ,aero-space-base-dim) :height 120))))
+   `(header-line ((t (:inherit mode-line :overline nil :underline nil
+                      :box (:line-width 2 :color ,aero-bg-magenta) :height 120))))
    `(tab-bar ((t (:inherit mode-line-inactive))))
    `(tab-bar-tab ((t (:inherit mode-line))))
    `(tab-bar-tab-inactive ((t (:inherit mode-line-inactive :slant italic))))

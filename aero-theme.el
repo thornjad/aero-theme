@@ -152,11 +152,12 @@
    `(fringe ((t (:background ,aero-bg))))
    `(cursor ((t (:background ,aero-cursor-bg))))
    `(mode-line
-     ((t (:background ,aero-bg :foreground ,aero-space-base
+     ((t (:background ,aero-bg :foreground ,aero-space-base :height 120
           :underline nil :overline ,aero-fg :box nil))))
    `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
    `(header-line
      ((t (:inherit mode-line :height 120
+          :box (:line-width 2 :color ,aero-space-base-dimmer)
           :background ,aero-act1 :underline nil :overline nil))))
    `(tab-bar ((t (:inherit mode-line-inactive))))
    `(tab-bar-tab ((t (:inherit mode-line))))
