@@ -66,7 +66,7 @@
 (deftheme aero)
 (let ((class '((class color) (min-colors #xFF)))
       (aero-bg "#fbf8ef")
-      ;; (aero-bg-alt "#edeceb")
+      (aero-bg-alt "#f2efe6")
       (aero-fg "#525C5A")
 
       (aero-space-base     "#655370")
@@ -134,8 +134,10 @@
       )
   (custom-theme-set-faces
    'aero
-   ;;`(default ((t (:background ,aero-bg :foreground ,aero-fg :font "Victor Mono" :height 150))))
-   `(default ((t (:background ,aero-bg :foreground ,aero-fg
+   `(default ((t (:background ,(if (and (boundp 'solaire-global-mode) solaire-global-mode)
+                                   aero-bg-alt
+                                 aero-bg)
+                  :foreground ,aero-fg
                   :font ,(when (window-system)
                            (cond
 				                    ((x-list-fonts "Victor Mono") "Victor Mono")
@@ -149,10 +151,15 @@
                         ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
                         ((x-list-fonts "Roboto") "Roboto")
                         (t "Sans Serif"))))))
-   `(fringe ((t (:background ,aero-bg))))
+   `(fringe ((t (:background ,(if (and (boundp 'solaire-global-mode) solaire-global-mode)
+                                  aero-bg-alt
+                                aero-bg)))))
    `(cursor ((t (:background ,aero-cursor-bg))))
    `(mode-line
-     ((t (:background ,aero-bg :foreground ,aero-space-base :height 120
+     ((t (:background ,(if (and (boundp 'solaire-global-mode) solaire-global-mode)
+                           aero-bg-alt
+                         aero-bg)
+          :foreground ,aero-space-base :height 120
           :underline nil :overline ,aero-fg :box nil))))
    `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
    `(header-line
@@ -670,6 +677,8 @@
    ;; Solaire
    `(solaire-mode-line-face ((t (:inherit mode-line))))
    `(solaire-mode-line-inactive-face ((t (:inherit mode-line-inactive))))
+   `(solaire-default-face ((t (:inherit default :background ,aero-bg))))
+   `(solaire-fringe-face ((t (:inherit fringe))))
 
    ;; eshell
    `(eshell-prompt ((t (:foreground ,aero-normal-blue))))
