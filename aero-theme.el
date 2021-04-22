@@ -173,7 +173,7 @@
    `(region ((t (:background ,aero-base11 :foreground ,aero-bg))))
    `(highlight ((t (:background ,aero-base11 :foreground ,aero-bg))))
    `(secondary-selection ((t (:background ,aero-base0))))
-   `(minibuffer-prompt ((t (:background ,aero-bg :foreground ,aero-normal-green :bold t))))
+   `(minibuffer-prompt ((t (:inherit default :foreground ,aero-normal-green :bold t))))
    `(vertical-border ((t (:foreground ,aero-base2 :background ,aero-bg))))
    `(window-divider ((t (:inherit vertical-border))))
    `(window-divider-first-pixel ((t (:inherit vertical-border :foreground ,aero-bg))))
