@@ -88,7 +88,10 @@
       (aero-brilliant-red "#5f0000"))
   (custom-theme-set-faces
    'aero-dark
-   `(default ((t (:background ,aero-bg-alt :foreground ,aero-fg
+   `(default ((t (:background ,(if (and (boundp 'solaire-mode) solaire-mode)
+                                   aero-bg-alt
+                                 aero-bg)
+                  :foreground ,aero-fg
                   :font ,(when (window-system)
                            (cond
 				                    ((x-list-fonts "Victor Mono") "Victor Mono")
@@ -102,7 +105,9 @@
                         ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
                         ((x-list-fonts "Roboto") "Roboto")
                         (t "Sans Serif"))))))
-   `(fringe ((t (:background ,aero-bg))))
+   `(fringe ((t (:background ,(if (and (boundp 'solaire-global-mode) solaire-global-mode)
+                                  aero-bg-alt
+                                aero-bg)))))
    `(cursor ((t (:background ,aero-fg))))
    `(mode-line ((t (:background ,aero-act1 :foreground ,aero-space-base :box (:line-width 3 :color ,aero-act1)))))
    `(mode-line-inactive ((t (:background ,aero-bg :foreground ,aero-space-base-dim :box (:line-width 3 :color ,aero-bg)))))
