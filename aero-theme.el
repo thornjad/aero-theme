@@ -119,6 +119,7 @@
 
       (aero-faded-red "#aa2222")
       (aero-faded-red-dim "#eecccc")
+      (aero-faded-orange "#432b00")
       (aero-faded-orange-dim "#edd5a8")
       (aero-faded-green "#22aa22")
       (aero-faded-green-dim "#cceecc")
@@ -620,9 +621,9 @@
    `(git-gutter+-added ((,class (:inherit diff-added))))
    `(git-gutter+-deleted ((,class (:inherit diff-removed))))
    `(git-gutter+-modified ((,class (:inherit diff-changed))))
-   `(git-gutter-fr:added ((,class (:inherit diff-added))))
-   `(git-gutter-fr:deleted ((,class (:inherit diff-removed))))
-   `(git-gutter-fr:modified ((,class (:inherit diff-changed))))
+   `(git-gutter-fr:added ((,class (:inherit diff-added :foreground ,aero-faded-green))))
+   `(git-gutter-fr:deleted ((,class (:inherit diff-removed :foreground ,aero-faded-red))))
+   `(git-gutter-fr:modified ((,class (:inherit diff-changed :foreground ,aero-faded-orange))))
 
    ;; flyspell
    `(flyspell-duplicate ((t (:underline (:color ,aero-base3 :style line)))))
@@ -678,7 +679,7 @@
    `(solaire-mode-line-face ((t (:inherit mode-line))))
    `(solaire-mode-line-inactive-face ((t (:inherit mode-line-inactive))))
    `(solaire-default-face ((t (:inherit default :background ,aero-bg))))
-   `(solaire-fringe-face ((t (:inherit fringe))))
+   `(solaire-fringe-face ((t (:inherit fringe :background ,aero-bg))))
 
    ;; eshell
    `(eshell-prompt ((t (:foreground ,aero-normal-blue))))

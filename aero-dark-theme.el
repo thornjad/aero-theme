@@ -105,7 +105,7 @@
                         ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
                         ((x-list-fonts "Roboto") "Roboto")
                         (t "Sans Serif"))))))
-   `(fringe ((t (:background ,(if (and (boundp 'solaire-global-mode) solaire-global-mode)
+   `(fringe ((t (:background ,(if (and (boundp 'solaire-mode) solaire-mode)
                                   aero-bg-alt
                                 aero-bg)))))
    `(cursor ((t (:background ,aero-fg))))
@@ -629,6 +629,7 @@
    `(solaire-mode-line-face ((t (:inherit mode-line))))
    `(solaire-mode-line-inactive-face ((t (:inherit mode-line-inactive))))
    `(solaire-default-face ((t (:inherit default :background ,aero-bg))))
+   `(solaire-fringe-face ((t (:inherit fringe :background ,aero-bg))))
 
    ;; eshell
    `(eshell-prompt ((t (:foreground ,aero-normal-blue))))
