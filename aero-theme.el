@@ -234,13 +234,13 @@
    `(whitespace-space-after-tab ((t (:foreground ,aero-base0))))
 
    ;; LSP
-   `(lsp-ui-doc-background ((t (:background ,aero-act1 :box (:line-width 1 :color ,aero-space-base)))))
+   `(lsp-ui-doc-background ((t (:background ,aero-act1 :box (:line-width 2 :color ,aero-space-base)))))
    `(lsp-ui-doc-header ((t (:foreground ,aero-space-base :background ,aero-act1 :underline ,aero-space-base))))
    `(lsp-headerline-breadcrumb-separator-face ((t (:height 0.8 :foreground ,aero-space-base))))
-   `(lsp-ui-sideline-global ((t (:background ,aero-bg-alt :height 0.7))))
-   `(lsp-ui-sideline-symbol ((t (:background ,aero-bg-alt :height 0.7 :box ,aero-space-base))))
-   `(lsp-ui-sideline-symbol-info ((t (:background ,aero-bg-alt :height 0.7 :slant italic))))
-   `(lsp-ui-sideline-current-symbol ((t (:background ,aero-bg-alt :foreground ,aero-brilliant-black :height 0.7 :weight bold :box ,aero-space-base))))
+   `(lsp-ui-sideline-global ((t (:foreground ,aero-space-base :background ,aero-act1 :height 0.7))))
+   `(lsp-ui-sideline-symbol ((t (:foreground ,aero-space-base :background ,aero-act1 :height 0.7))))
+   `(lsp-ui-sideline-symbol-info ((t (:foreground ,aero-space-base :background ,aero-act1 :height 0.7 :slant italic))))
+   `(lsp-ui-sideline-current-symbol ((t (:background ,aero-act1 :foreground ,aero-brilliant-black :height 0.7 :weight bold))))
 
    ;; Displaying formfeed chars
    `(page-break-lines ((t (:foreground ,aero-base2))))
