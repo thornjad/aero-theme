@@ -468,6 +468,9 @@
    `(markdown-pre-face ((t (:inherit fixed-pitch))))
    `(markdown-inline-code-face ((t (:inherit fixed-pitch))))
 
+   ;; writegood-mode
+   `(writegood-passive-voice-face ((t (:underline (:style wave :color ,aero-normal-blue)))))
+
    ;; ace-jump-mode
    `(ace-jump-face-background ((t (:foreground ,aero-grey3 :background ,aero-bg :inverse-video nil))))
    `(ace-jump-face-foreground ((t (:foreground ,aero-bright-red :background ,aero-bg :inverse-video nil))))
