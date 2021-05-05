@@ -38,7 +38,7 @@
 (deftheme aero-dark)
 (let ((class '((class color) (min-colors #xFF)))
       (aero-bg "#292b2e")
-      (aero-bg-alt "#282a36")
+      (aero-bg-alt "#232528")
       (aero-fg "#d1c8b2")
 
       (aero-grey0 "#373426")
@@ -49,7 +49,6 @@
       (aero-grey4 "#b0ada2")
       (aero-grey5 "#d5d2c8")
       (aero-grey6 "#444155")
-      (aero-act1 "#222226")
       (aero-space-base "#b2b2b2")
       (aero-space-base-dim "#686868")
       (aero-bg-magenta "#5d4d7a")
@@ -109,8 +108,8 @@
                                   aero-bg-alt
                                 aero-bg)))))
    `(cursor ((t (:background ,aero-fg))))
-   `(mode-line ((t (:background ,aero-act1 :foreground ,aero-space-base :box (:line-width 3 :color ,aero-act1)))))
-   `(mode-line-inactive ((t (:background ,aero-bg :foreground ,aero-space-base-dim :box (:line-width 3 :color ,aero-bg)))))
+   `(mode-line ((t (:background ,aero-bg-alt :foreground ,aero-space-base :box (:line-width 3 :color ,aero-bg-alt)))))
+   `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
    `(header-line ((t (:inherit mode-line :overline nil :underline nil
                       :box (:line-width 2 :color ,aero-bg-magenta) :height 120))))
    `(tab-bar ((t (:inherit mode-line-inactive))))
@@ -188,8 +187,8 @@
    `(whitespace-space-after-tab ((t (:foreground ,aero-grey0))))
 
    ;; LSP
-   `(lsp-ui-doc-background ((t (:background ,aero-act1))))
-   `(lsp-ui-doc-header ((t (:foreground ,aero-space-base :background ,aero-act1 :underline ,aero-space-base))))
+   `(lsp-ui-doc-background ((t (:background ,aero-bg-alt))))
+   `(lsp-ui-doc-header ((t (:foreground ,aero-space-base :background ,aero-bg-alt :underline ,aero-space-base))))
 
    ;; Displaying formfeed chars
    `(page-break-lines ((t (:foreground ,aero-grey2))))
@@ -200,10 +199,10 @@
    `(highlight-indentation-face ((t (:background ,aero-grey0))))
 
    ;; indent-guide
-   `(indent-guide-face ((t (:background ,aero-bg :foreground ,aero-grey0 :slant normal))))
+   `(indent-guide-face ((t (:foreground ,aero-grey0 :slant normal))))
 
    ;; fill column indicator
-   `(fill-column-indicator ((t (:background ,aero-bg :foreground ,aero-grey05))))
+   `(fill-column-indicator ((t (:foreground ,aero-grey05))))
 
    ;; pulse
    `(pulse-highlight-start-face ((t (:background ,aero-bg-magenta))))
@@ -233,10 +232,10 @@
    `(ag-match-face ((t (:foreground ,aero-bright-red))))
 
    ;; diffs
-   `(diff-changed ((t (:background nil :foreground ,aero-normal-yellow))))
-   `(diff-added ((t (:background nil :foreground ,aero-normal-green))))
+   `(diff-changed ((t (:background ,aero-bg :foreground ,aero-normal-yellow))))
+   `(diff-added ((t (:background ,aero-bg :foreground ,aero-normal-green))))
    `(diff-refine-added ((t (:background ,aero-brilliant-green :foreground ,aero-bright-green))))
-   `(diff-removed ((t (:background nil :foreground ,aero-bright-red))))
+   `(diff-removed ((t (:background ,aero-bg :foreground ,aero-bright-red))))
    `(diff-refine-removed ((t (:background ,aero-brilliant-red :foreground ,aero-bright-red))))
    `(diff-indicator-changed ((t (:inherit diff-changed))))
    `(diff-indicator-added ((t (:inherit diff-added))))
