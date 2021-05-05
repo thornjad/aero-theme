@@ -498,6 +498,11 @@
    `(org-habit-overdue-face ((t (:background ,aero-bright-red))))
    `(org-habit-overdue-future-face ((t (:background ,aero-bright-red))))
 
+   ;; jupyter via ein
+   `(ein:cell-input-area ((t (:background ,aero-bg))))
+   `(ein:cell-input-prompt ((t (:foreground ,aero-normal-blue :slant italic :box ,aero-base1))))
+   `(ein:cell-output-prompt ((t (:foreground ,aero-normal-cyan :slant italic :box ,aero-base1))))
+
    ;; elfeed
    `(elfeed-search-title-face ((t (:foreground ,aero-base2  ))))
    `(elfeed-search-unread-title-face ((t (:foreground ,aero-fg))))
