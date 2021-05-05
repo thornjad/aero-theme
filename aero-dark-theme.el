@@ -113,7 +113,7 @@
    `(header-line ((t (:inherit mode-line :overline nil :underline nil
                       :box (:line-width 2 :color ,aero-bg-magenta) :height 120))))
    `(tab-bar ((t (:inherit mode-line-inactive))))
-   `(tab-bar-tab ((t (:inherit mode-line))))
+   `(tab-bar-tab ((t (:inherit mode-line :overline ,aero-space-base))))
    `(tab-bar-tab-inactive ((t (:inherit mode-line-inactive :slant italic))))
    `(hl-line ((t (:background ,aero-grey0))))
    `(region ((t (:background ,aero-grey6 :foreground ,aero-grey5))))
