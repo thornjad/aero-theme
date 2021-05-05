@@ -12,6 +12,8 @@
 *** Fixed
 - Fringe coloring
 - Minibuffer prompt coloring
+- Writegood passive underline brightness
+- Dark theme's org level coloring
 
 ** [1.1.3] - 2021-04-08
 *** Added
