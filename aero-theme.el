@@ -63,6 +63,10 @@
   "Supergroup for theme options"
   :group 'faces)
 
+(defmacro if-solaire (pos neg)
+  "Return POS if Solaire is activated, otherwise NEG."
+  `(if (and (boundp solaire-mode) solaire-mode) ,pos ,neg))
+
 (deftheme aero)
 (let ((class '((class color) (min-colors #xFF)))
       (aero-bg "#fbf8ef")
@@ -135,9 +139,7 @@
       )
   (custom-theme-set-faces
    'aero
-   `(default ((t (:background ,(if (and (boundp 'solaire-global-mode) solaire-global-mode)
-                                   aero-bg-alt
-                                 aero-bg)
+   `(default ((t (:background ,(if-solaire aero-bg-alt aero-bg)
                   :foreground ,aero-fg
                   :font ,(when (window-system)
                            (cond
@@ -152,14 +154,10 @@
                         ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
                         ((x-list-fonts "Roboto") "Roboto")
                         (t "Sans Serif"))))))
-   `(fringe ((t (:background ,(if (and (boundp 'solaire-global-mode) solaire-global-mode)
-                                  aero-bg-alt
-                                aero-bg)))))
+   `(fringe ((t (:background ,(if-solaire aero-bg-alt aero-bg)))))
    `(cursor ((t (:background ,aero-cursor-bg))))
    `(mode-line
-     ((t (:background ,(if (and (boundp 'solaire-global-mode) solaire-global-mode)
-                           aero-bg-alt
-                         aero-bg)
+     ((t (:background ,(if-solaire aero-bg-alt aero-bg)
           :foreground ,aero-space-base :height 120
           :underline nil :overline ,aero-fg :box nil))))
    `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
@@ -167,8 +165,8 @@
      ((t (:inherit mode-line :height 120
           :box (:line-width 2 :color ,aero-space-base-dimmer)
           :background ,aero-act1 :underline nil :overline nil))))
-   `(tab-bar ((t (:inherit mode-line-inactive))))
-   `(tab-bar-tab ((t (:inherit mode-line))))
+   `(tab-bar ((t (:inherit mode-line-inactive :overline nil :box (:line-width 3 :color ,(if-solaire aero-bg-alt aero-bg))))))
+   `(tab-bar-tab ((t (:inherit mode-line :overline ,aero-space-base))))
    `(tab-bar-tab-inactive ((t (:inherit mode-line-inactive :slant italic))))
    `(hl-line ((t (:background ,aero-base0))))
    `(region ((t (:background ,aero-base11 :foreground ,aero-bg))))
