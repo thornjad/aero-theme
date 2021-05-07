@@ -210,9 +210,9 @@
    ;; smartparens
    `(sp-pair-overlay-face ((t (:background ,aero-grey1))))
    ;; Pair tags highlight
-   `(sp-show-pair-match-face ((t (:background ,aero-grey1))))
+   `(sp-show-pair-match-face ((t (:inherit show-paren-match))))
    ;; Highlight for bracket without pair
-   `(sp-show-pair-mismatch-face ((t (:background ,aero-bright-red))))
+   `(sp-show-pair-mismatch-face ((t (:inherit show-paren-mismatch))))
 
    ;; elscreen
    ;; Tab bar, not the tabs
@@ -480,8 +480,8 @@
    `(aw-leading-char-face ((t (:foreground ,aero-bright-red :background ,aero-bg :height 4.0))))
 
    ;; show-paren
-   `(show-paren-match ((t (:background ,aero-grey1 :foreground ,aero-normal-blue  :weight bold))))
-   `(show-paren-mismatch ((t (:background ,aero-bright-red :foreground ,aero-grey1 :weight bold))))
+   `(show-paren-match ((t (:background ,aero-grey1 :foreground ,aero-normal-blue :weight bold))))
+   `(show-paren-mismatch ((t (:background ,aero-normal-red :foreground ,aero-normal-black :weight bold))))
 
    ;; swiper
    `(swiper-match-face-1 ((t (:inherit match))))
