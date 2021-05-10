@@ -76,7 +76,7 @@
       (aero-space-base     "#655370")
       (aero-space-base-dim "#a094a2")
       (aero-space-base-dimmer "#D2CFD2")
-      (aero-base0          "#FAF7EE")
+      (aero-base0          "#fffdf9")
       (aero-base1          "#ece3cf")
       (aero-base2          "#e4e2e2")
       (aero-base3          "#96a7a9")
@@ -87,7 +87,7 @@
       (aero-base8          "#d5c4a1")
       ;; (aero-base9          "#fafafa")
       (aero-base10 "#8B887D")
-      (aero-base11 "#B0ADA2")
+      (aero-base11 "#c0bdb2")
       (aero-base12 "#ECE9E0")
       (aero-base13 "#373426")
       (aero-act1           "#e7e5eb")
@@ -98,7 +98,7 @@
       (aero-ttip-bg "#ECE9E0")
       (aero-cursor-bg "#1B1809")
       (aero-comment "#829293")
-      (aero-comment-bg "#E8E7E6")
+      (aero-comment-bg "#EcEbEa")
 
       (aero-normal-black    "#4E4B3D")
       (aero-normal-white    "#ECF3F3")
@@ -675,6 +675,9 @@
    `(undo-tree-visualizer-default-face ((t (:foreground ,aero-base2))))
    `(undo-tree-visualizer-register-face ((t (:foreground ,aero-bright-yellow))))
    `(undo-tree-visualizer-unmodified-face ((t (:foreground ,aero-normal-blue))))
+
+   ;; treemacs
+   `(treemacs-fringe-indicator-face ((t (:foreground ,aero-space-base-dim))))
 
    ;; widget faces
    `(widget-button-pressed-face ((t (:foreground ,aero-bright-red))))
