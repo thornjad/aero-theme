@@ -69,8 +69,8 @@
 
 (deftheme aero)
 (let ((class '((class color) (min-colors #xFF)))
-      (aero-bg "#fbf8ef")
-      (aero-bg-alt "#f2efe6")
+      (aero-bg "#fefbf2")
+      (aero-bg-alt "#f6f3e8")
       (aero-fg "#525C5A")
 
       (aero-space-base     "#655370")
