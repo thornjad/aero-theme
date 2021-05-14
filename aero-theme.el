@@ -65,12 +65,14 @@
 
 (defmacro if-solaire (pos neg)
   "Return POS if Solaire is activated, otherwise NEG."
-  `(if (and (boundp solaire-mode) solaire-mode) ,pos ,neg))
+  `(if (or (and (boundp 'solaire-mode) solaire-mode)
+           (and (boundp 'solaire-global-mode) solaire-global-mode))
+       ,pos ,neg))
 
 (deftheme aero)
 (let ((class '((class color) (min-colors #xFF)))
       (aero-bg "#fefbf2")
-      (aero-bg-alt "#f6f3e8")
+      (aero-bg-alt "#f6f3e7")
       (aero-fg "#525C5A")
 
       (aero-space-base     "#655370")
