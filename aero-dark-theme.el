@@ -35,6 +35,12 @@
   "Supergroup for theme options"
   :group 'faces)
 
+(defmacro if-solaire (pos neg)
+  "Return POS if Solaire is activated, otherwise NEG."
+  `(if (or (and (boundp 'solaire-mode) solaire-mode)
+           (and (boundp 'solaire-global-mode) solaire-global-mode))
+       ,pos ,neg))
+
 (deftheme aero-dark)
 (let ((class '((class color) (min-colors #xFF)))
       (aero-bg "#26282b")
@@ -87,9 +93,7 @@
       (aero-brilliant-red "#5f0000"))
   (custom-theme-set-faces
    'aero-dark
-   `(default ((t (:background ,(if (and (boundp 'solaire-mode) solaire-mode)
-                                   aero-bg-alt
-                                 aero-bg)
+   `(default ((t (:background ,(if-solaire aero-bg-alt aero-bg)
                   :foreground ,aero-fg
                   :font ,(when (window-system)
                            (cond
@@ -104,9 +108,7 @@
                         ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
                         ((x-list-fonts "Roboto") "Roboto")
                         (t "Sans Serif"))))))
-   `(fringe ((t (:background ,(if (and (boundp 'solaire-mode) solaire-mode)
-                                  aero-bg-alt
-                                aero-bg)))))
+   `(fringe ((t (:background ,(if-solaire aero-bg-alt aero-bg)))))
    `(cursor ((t (:background ,aero-fg))))
    `(mode-line ((t (:background ,aero-bg-alt :foreground ,aero-space-base :box (:line-width 3 :color ,aero-bg-alt)))))
    `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
