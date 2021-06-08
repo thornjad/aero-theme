@@ -89,12 +89,13 @@
       (aero-base8          "#d5c4a1")
       ;; (aero-base9          "#fafafa")
       (aero-base10 "#8B887D")
-      (aero-base11 "#c0bdb2")
+      (aero-base11 "#82aec5")
       (aero-base12 "#ECE9E0")
       (aero-base13 "#373426")
-      (aero-act1           "#e7e5eb")
-      ;; (aero-act2           "#d3d3e7")
+      (aero-act1 "#e7e5eb")
+      ;; (aero-act2 "#d3d3e7")
 
+      (aero-modeline-bg "#e5e5e5")
       (aero-ttip "#373426")
       (aero-ttip-sel "#D5D2C8")
       (aero-ttip-bg "#ECE9E0")
@@ -554,7 +555,7 @@
    `(ivy-minibuffer-match-face-4 ((t (:foreground ,aero-fg :weight bold))))
 
    ;; ivy-posframe
-   `(ivy-posframe ((t (:background ,aero-space-base-dimmer))))
+   `(ivy-posframe ((t (:background ,aero-modeline-bg))))
    `(ivy-posframe-border ((t (:box (:color ,aero-space-base :width 2) :background ,aero-space-base))))
 
    ;; magit
