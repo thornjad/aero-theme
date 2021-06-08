@@ -9,6 +9,7 @@
 - Improved light theme header-line display
 - Improved LSP UI sideline
 - Slightly decreased Org heading font sizes
+- Improved posframe background contrast
 
 *** Fixed
 - Fringe coloring
