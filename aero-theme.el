@@ -149,7 +149,7 @@
 				                    ((x-list-fonts "Victor Mono") "Victor Mono")
 				                    ((x-list-fonts "Ubuntu Mono") "Ubuntu Mono")
 				                    (t "monospace")))
-                  :height 120))))
+                  :height 100))))
    `(variable-pitch
      ((t :font ,(when (window-system)
                   (cond ((x-list-fonts "Ubuntu Light") "Ubuntu Light")
@@ -160,8 +160,10 @@
    `(fringe ((t (:background ,(if-solaire aero-bg-alt aero-bg)))))
    `(cursor ((t (:background ,aero-cursor-bg))))
    `(mode-line
-     ((t (:background ,(if-solaire aero-bg-alt aero-bg)
-          :foreground ,aero-space-base :height 120
+     ((t (:background ,(if (window-system)
+                           (if-solaire aero-bg-alt aero-bg)
+                         aero-modeline-bg)
+          :foreground ,aero-space-base :height 100
           :underline nil :overline ,aero-fg :box nil))))
    `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
    `(header-line
