@@ -171,7 +171,7 @@
    `(tab-bar ((t (:inherit mode-line-inactive :overline nil :box (:line-width 3 :color ,(if-solaire aero-bg-alt aero-bg))))))
    `(tab-bar-tab ((t (:inherit mode-line :overline ,aero-space-base))))
    `(tab-bar-tab-inactive ((t (:inherit mode-line-inactive :slant italic))))
-   `(hl-line ((t (:background ,aero-base0))))
+   `(hl-line ((t (:background ,aero-bg-alt))))
    `(region ((t (:background ,aero-base11 :foreground ,aero-bg))))
    `(highlight ((t (:background ,aero-base11 :foreground ,aero-bg))))
    `(secondary-selection ((t (:background ,aero-base0))))
