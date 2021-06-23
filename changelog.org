@@ -3,6 +3,7 @@
 ** Unreleased
 *** Added
 - Support for Solaire mode
+- Support for eprime-mode
 
 *** Changed
 - Tweak to background and highlight coloring in dark theme
