@@ -583,6 +583,9 @@
    `(flyspell-duplicate ((t (:underline (:color ,aero-grey3 :style line)))))
    `(flyspell-incorrect ((t (:underline (:color ,aero-bright-red :style line)))))
 
+   ;; eprime-mode
+   `(eprime-banned-words-face ((t (:inherit default :underline (:color ,aero-bright-blue :style wave)))))
+
    ;; flycheck
    `(flycheck-warning ((t (:underline (:color ,aero-bright-yellow :style line)))))
    `(flycheck-error ((t (:underline (:color ,aero-bright-red :style line)))))
