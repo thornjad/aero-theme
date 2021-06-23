@@ -135,7 +135,7 @@
    ;; Built-in syntax
    `(font-lock-builtin-face ((t (:foreground ,aero-grey5 :slant italic))))
    `(font-lock-constant-face ((t (:foreground ,aero-normal-magenta))))
-   `(font-lock-comment-face ((,class (:foreground ,aero-grey4 :slant italic))))
+   `(font-lock-comment-face ((,class (:foreground ,aero-grey4 :background ,aero-bg :slant italic))))
    `(font-lock-function-name-face ((t (:foreground ,aero-bright-orange))))
    `(font-lock-keyword-face ((t (:foreground ,aero-normal-yellow))))
    `(font-lock-string-face ((t (:foreground ,aero-bright-green :slant italic))))
