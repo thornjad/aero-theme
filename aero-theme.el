@@ -167,7 +167,7 @@
           :underline nil :overline ,aero-fg :box nil))))
    `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
    `(header-line
-     ((t (:inherit mode-line :height 120
+     ((t (:inherit mode-line :height 100
           :box (:line-width 2 :color ,aero-space-base-dimmer)
           :background ,aero-act1 :underline nil :overline nil))))
    `(tab-bar ((t (:inherit mode-line-inactive :overline nil :box (:line-width 3 :color ,(if-solaire aero-bg-alt aero-bg))))))
