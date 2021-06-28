@@ -35,6 +35,10 @@
   "Supergroup for theme options"
   :group 'faces)
 
+(defcustom aero-theme-font-height 100
+  "Base font size."
+  :group aero-theme)
+
 (defmacro if-solaire (pos neg)
   "Return POS if Solaire is activated, otherwise NEG."
   `(if (or (and (boundp 'solaire-mode) solaire-mode)
@@ -100,7 +104,7 @@
 				                    ((x-list-fonts "Victor Mono") "Victor Mono")
 				                    ((x-list-fonts "Ubuntu Mono") "Ubuntu Mono")
 				                    (t "monospace")))
-                  :height 120 :weight light))))
+                  :height ,aero-theme-font-height :weight light))))
    `(variable-pitch
      ((t :font ,(when (window-system)
                   (cond ((x-list-fonts "Ubuntu Light") "Ubuntu Light")
@@ -113,7 +117,7 @@
    `(mode-line ((t (:background ,aero-bg-alt :foreground ,aero-space-base :box (:line-width 3 :color ,aero-bg-alt)))))
    `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
    `(header-line ((t (:inherit mode-line :overline nil :underline nil
-                      :box (:line-width 2 :color ,aero-bg-magenta) :height 120))))
+                      :box (:line-width 2 :color ,aero-bg-magenta) :height ,aero-theme-font-height))))
    `(tab-bar ((t (:inherit mode-line-inactive))))
    `(tab-bar-tab ((t (:inherit mode-line :overline ,aero-space-base))))
    `(tab-bar-tab-inactive ((t (:inherit mode-line-inactive :slant italic))))
