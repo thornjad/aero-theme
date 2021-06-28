@@ -4,6 +4,7 @@
 *** Added
 - Support for Solaire mode
 - Support for eprime-mode
+- Customizable font height, see =aero-theme-font-height=
 
 *** Changed
 - Tweak to background and highlight coloring in dark theme
