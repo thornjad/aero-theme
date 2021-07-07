@@ -65,7 +65,7 @@
 
 (defcustom aero-theme-font-height 100
   "Base font size."
-  :group aero-theme)
+  :group 'aero-theme)
 
 (defmacro if-solaire (pos neg)
   "Return POS if Solaire is activated, otherwise NEG."
