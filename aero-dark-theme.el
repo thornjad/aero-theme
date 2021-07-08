@@ -198,7 +198,8 @@
 
    ;; Displaying formfeed chars
    `(page-break-lines ((t (:foreground ,aero-grey2))))
-   `(formfeeder-line ((t (:strike-through ,aero-grey2))))
+   `(formfeeder-line ((t (:strike-through ,aero-grey2
+                          :underline ,(when (not (window-system)) aero-grey2)))))
 
    ;; Highlight indentation mode
    `(highlight-indentation-current-column-face ((t (:background ,aero-grey1))))

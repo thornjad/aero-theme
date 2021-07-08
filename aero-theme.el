@@ -253,7 +253,8 @@
 
    ;; Displaying formfeed chars
    `(page-break-lines ((t (:foreground ,aero-base2))))
-   `(formfeeder-line ((t (:strike-through ,aero-base2))))
+   `(formfeeder-line ((t (:strike-through ,aero-base2
+                          :underline ,(when (not (window-system)) aero-base2)))))
 
    ;; Highlight indentation mode
    `(highlight-indentation-current-column-face ((t (:background ,aero-base1))))
