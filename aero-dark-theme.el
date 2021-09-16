@@ -39,6 +39,26 @@
   "Base font size."
   :group 'aero-theme)
 
+(defcustom aero-theme-font
+  (when (window-system)
+    (cond
+     ((x-list-fonts "JetBrains Mono") "JetBrains Mono")
+		 ((x-list-fonts "Victor Mono") "Victor Mono")
+		 ((x-list-fonts "Ubuntu Mono") "Ubuntu Mono")
+		 (t "monospace")))
+  "Base monospace font. Default depends on installed fonts."
+  :group 'aero-theme)
+
+(defcustom aero-theme-variable-pitch-font
+  (when (window-system)
+    (cond ((x-list-fonts "Ubuntu Light") "Ubuntu Light")
+          ((x-list-fonts "Source Sans Pro") "Source Sans Pro")
+          ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
+          ((x-list-fonts "Roboto") "Roboto")
+          (t "Sans Serif")))
+  "Base variable pitch font. Default depends on installed fonts."
+  :group 'aero-theme)
+
 (defmacro if-solaire (pos neg)
   "Return POS if Solaire is activated, otherwise NEG."
   `(if (or (and (boundp 'solaire-mode) solaire-mode)
@@ -99,19 +119,10 @@
    'aero-dark
    `(default ((t (:background ,(if-solaire aero-bg-alt aero-bg)
                   :foreground ,aero-fg
-                  :font ,(when (window-system)
-                           (cond
-				                    ((x-list-fonts "Victor Mono") "Victor Mono")
-				                    ((x-list-fonts "Ubuntu Mono") "Ubuntu Mono")
-				                    (t "monospace")))
+                  :font ,aero-theme-font
                   :height ,aero-theme-font-height :weight light))))
    `(variable-pitch
-     ((t :font ,(when (window-system)
-                  (cond ((x-list-fonts "Ubuntu Light") "Ubuntu Light")
-                        ((x-list-fonts "Source Sans Pro") "Source Sans Pro")
-                        ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
-                        ((x-list-fonts "Roboto") "Roboto")
-                        (t "Sans Serif"))))))
+     ((t :font ,aero-theme-variable-pitch-font)))
    `(fringe ((t (:background ,(if-solaire aero-bg-alt aero-bg)))))
    `(cursor ((t (:background ,aero-fg))))
    `(mode-line ((t (:background ,aero-bg-alt :foreground ,aero-space-base :box (:line-width 3 :color ,aero-bg-alt)))))
