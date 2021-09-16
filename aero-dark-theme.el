@@ -125,7 +125,7 @@
      ((t :font ,aero-theme-variable-pitch-font)))
    `(fringe ((t (:background ,(if-solaire aero-bg-alt aero-bg)))))
    `(cursor ((t (:background ,aero-fg))))
-   `(mode-line ((t (:background ,aero-bg-alt :foreground ,aero-space-base :box (:line-width 3 :color ,aero-bg-alt)))))
+   `(mode-line ((t (:background ,aero-bg-alt :foreground ,aero-space-base :box (:line-width 4 :color ,aero-bg-alt)))))
    `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
    `(header-line ((t (:inherit mode-line :overline nil :underline nil
                       :box (:line-width 2 :color ,aero-bg-magenta) :height ,aero-theme-font-height))))
