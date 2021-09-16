@@ -119,7 +119,7 @@
       (aero-act1 "#e7e5eb")
       ;; (aero-act2 "#d3d3e7")
 
-      (aero-modeline-bg "#e5e5e5")
+      (aero-modeline-bg "#fefbf2")
       (aero-ttip "#373426")
       (aero-ttip-sel "#D5D2C8")
       (aero-ttip-bg "#ECE9E0")
@@ -175,9 +175,7 @@
    `(fringe ((t (:background ,(if-solaire aero-bg-alt aero-bg)))))
    `(cursor ((t (:background ,aero-cursor-bg))))
    `(mode-line
-     ((t (:background ,(if (window-system)
-                           (if-solaire aero-bg-alt aero-bg)
-                         aero-modeline-bg)
+     ((t (:background ,aero-modeline-bg
           :foreground ,aero-space-base :height ,aero-theme-font-height
           :underline nil :overline ,aero-fg :box nil))))
    `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
