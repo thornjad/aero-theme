@@ -70,7 +70,7 @@
 (defcustom aero-theme-font
   (when (window-system)
     (cond
-     ((x-list-fonts "JetBrains Mono") "JetBrains Mono")
+     ((x-list-fonts "IBM Plex Mono") "IBM Plex Mono")
 		 ((x-list-fonts "Victor Mono") "Victor Mono")
 		 ((x-list-fonts "Ubuntu Mono") "Ubuntu Mono")
 		 (t "monospace")))
