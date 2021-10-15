@@ -1,6 +1,14 @@
 #+title: Aero Theme Changelog
 
-** Unreleased
+** [1.2.2] - 2021-10-15
+*** Changed
+- Tweak default fonts to use IBM Plex Mono if available.
+
+** [1.2.1] - 2021-09-16
+*** Added
+- Introduces =aero-theme-font= and =aero-theme-variable-pitch-font= as variables to control your own font, rather than depending on my whims
+
+** [1.2.0] - 2021-09-16
 *** Added
 - Support for Solaire mode
 - Support for eprime-mode
