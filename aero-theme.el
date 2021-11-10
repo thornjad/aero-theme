@@ -1,4 +1,4 @@
-;;; aero-theme.el --- A practical light theme -*- lexical-binding: t; -*-
+;;; aero-theme.el --- A practical theme -*- lexical-binding: t; -*-
 ;;
 ;; Author: Jade Michael Thornton
 ;; Copyright (c) 2019-2021 Jade Michael Thornton
