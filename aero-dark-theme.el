@@ -120,7 +120,7 @@
    `(default ((t (:background ,(if-solaire aero-bg-alt aero-bg)
                   :foreground ,aero-fg
                   :font ,aero-theme-font
-                  :height ,aero-theme-font-height :weight light))))
+                  :height ,aero-theme-font-height))))
    `(variable-pitch
      ((t :font ,aero-theme-variable-pitch-font)))
    `(fringe ((t (:background ,(if-solaire aero-bg-alt aero-bg)))))
