@@ -178,6 +178,7 @@
      ((t (:background ,aero-modeline-bg
           :foreground ,aero-space-base :height ,aero-theme-font-height
           :underline nil :overline ,aero-fg :box nil))))
+   `(mode-line-active ((t (:inherit mode-line))))
    `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
    `(header-line
      ((t (:inherit mode-line :height ,aero-theme-font-height
