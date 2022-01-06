@@ -207,11 +207,17 @@
    ;; LSP
    `(lsp-ui-doc-background ((t (:background ,aero-bg-alt))))
    `(lsp-ui-doc-header ((t (:foreground ,aero-space-base :background ,aero-bg-alt :underline ,aero-space-base))))
+   `(lsp-ui-sideline-code-action ((t (:foreground ,aero-grey6 :underline t))))
+   `(lsp-headerline-breadcrumb-separator-face ((t (:height 0.7 :foreground ,aero-grey6))))
+   `(lsp-ui-sideline-global ((t (:foreground ,aero-grey6 :background ,aero-bg-alt :height 0.7))))
+   `(lsp-ui-sideline-symbol ((t (:foreground ,aero-grey6 :background ,aero-bg-alt :height 0.7))))
+   `(lsp-ui-sideline-symbol-info ((t (:foreground ,aero-grey6 :background ,aero-bg-alt :height 0.7 :slant italic))))
+   `(lsp-ui-sideline-current-symbol ((t (:background ,aero-grey6 :foreground ,aero-brilliant-black :height 0.7 :weight bold))))
+   `(lsp-face-highlight-read ((t (:background ,aero-grey6 :foreground nil))))
 
    ;; Displaying formfeed chars
    `(page-break-lines ((t (:foreground ,aero-grey2))))
-   `(formfeeder-line ((t (:strike-through ,aero-grey2
-                          :underline ,(when (not (window-system)) aero-grey2)))))
+   `(formfeeder-line ((t (:strike-through ,aero-grey2 :underline ,(when (not (window-system)) aero-grey2)))))
 
    ;; Highlight indentation mode
    `(highlight-indentation-current-column-face ((t (:background ,aero-grey1))))
