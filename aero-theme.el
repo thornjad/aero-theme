@@ -108,7 +108,7 @@
       (aero-base3          "#96a7a9")
       (aero-base4          "#718388")
       ;; (aero-base5          "#626c6c")
-      ;; (aero-base6          "#89867A")
+      (aero-base6          "#89867A")
       (aero-base7          "#424242")
       (aero-base8          "#d5c4a1")
       ;; (aero-base9          "#fafafa")
@@ -259,6 +259,7 @@
    `(lsp-ui-sideline-global ((t (:foreground ,aero-space-base :background ,aero-act1 :height 0.7))))
    `(lsp-ui-sideline-symbol ((t (:foreground ,aero-space-base :background ,aero-act1 :height 0.7))))
    `(lsp-ui-sideline-symbol-info ((t (:foreground ,aero-space-base :background ,aero-act1 :height 0.7 :slant italic))))
+   `(lsp-ui-sideline-code-action ((t (:foreground ,aero-base6 :underline t))))
    `(lsp-ui-sideline-current-symbol ((t (:background ,aero-act1 :foreground ,aero-brilliant-black :height 0.7 :weight bold))))
    `(lsp-face-highlight-read ((t (:background nil :foreground nil :underline ,aero-base11))))
 
