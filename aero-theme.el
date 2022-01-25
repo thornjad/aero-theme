@@ -1,7 +1,7 @@
 ;;; aero-theme.el --- A practical theme -*- lexical-binding: t; -*-
 ;;
 ;; Author: Jade Michael Thornton
-;; Copyright (c) 2019-2021 Jade Michael Thornton
+;; Copyright (c) 2019-2022 Jade Michael Thornton
 ;; URL: https://gitlab.com/thornjad/aero-theme
 ;; Package-Requires: ((emacs "25.1"))
 ;; Version: 1.2.3
