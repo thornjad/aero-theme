@@ -125,7 +125,7 @@
      ((t :font ,aero-theme-variable-pitch-font)))
    `(fringe ((t (:background ,(if-solaire aero-bg-alt aero-bg)))))
    `(cursor ((t (:background ,aero-fg))))
-   `(mode-line ((t (:background ,aero-bg-alt :foreground ,aero-space-base :box (:line-width 4 :color ,aero-bg-alt)))))
+   `(mode-line ((t (:background ,aero-bg-alt :foreground ,aero-space-base))))
    `(mode-line-active ((t (:inherit mode-line))))
    `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
    `(header-line ((t (:inherit mode-line :overline nil :underline nil
@@ -166,17 +166,19 @@
    `(warning ((t (:foreground ,aero-bright-yellow :weight bold))))
 
    ;; Aero modeline
-   `(aero/modeline-evil-normal ((t (:foreground ,aero-bg :background ,aero-grey4 :box (:line-width 3 :color ,aero-grey4)))))
-   `(aero/modeline-evil-insert ((t (:foreground ,aero-bg :background ,aero-normal-blue :box (:line-width 3 :color ,aero-normal-blue)))))
-   `(aero/modeline-evil-visual ((t (:foreground ,aero-bg :background ,aero-normal-green :box (:line-width 3 :color ,aero-normal-green)))))
-   `(aero/modeline-evil-replace ((t (:foreground ,aero-bg :background ,aero-bright-orange :box (:line-width 3 :color ,aero-bright-orange)))))
-   `(aero/modeline-evil-operator ((t (:foreground ,aero-bg :background ,aero-bright-yellow :box (:line-width 3 :color ,aero-bright-yellow)))))
-   `(aero/modeline-evil-motion ((t (:foreground ,aero-bg :background ,aero-grey3 :box (:line-width 3 :color ,aero-grey3)))))
-   `(aero/modeline-evil-emacs ((t (:foreground ,aero-bg :background ,aero-bright-red :box (:line-width 3 :color ,aero-bright-red)))))
+   `(aero/modeline-evil-normal ((t (:foreground ,aero-grey4))))
+   `(aero/modeline-evil-insert ((t (:foreground ,aero-normal-blue))))
+   `(aero/modeline-evil-visual ((t (:foreground ,aero-normal-green))))
+   `(aero/modeline-evil-replace ((t (:foreground ,aero-bright-orange))))
+   `(aero/modeline-evil-operator ((t (:foreground ,aero-bright-yellow))))
+   `(aero/modeline-evil-motion ((t (:foreground ,aero-grey3))))
+   `(aero/modeline-evil-emacs ((t (:foreground ,aero-bright-red))))
    `(aero/modeline-major-mode ((t (:inherit mode-line-buffer-id))))
    `(aero/modeline-modified ((t (:inherit error :height 180))))
    `(aero/modeline-not-modified ((t (:inherit success :height 180))))
    `(aero/modeline-read-only ((t (:inherit warning :height 180))))
+   `(aero/modeline-bar ((t (:background ,aero-bg-magenta))))
+   `(aero/modeline-bar-inactive ((t (:background ,aero-space-base-dim))))
 
    ;; centaur tabs
    `(centaur-tabs-default ((t (:background ,aero-grey0 :foreground ,aero-grey4))))
