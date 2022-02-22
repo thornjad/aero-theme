@@ -648,15 +648,15 @@
    `(magit-tag ((t (:foreground ,aero-bright-yellow))))
 
    ;; git-gutter and git-gutter-fringe
-   `(git-gutter:added ((,class (:inherit diff-added))))
-   `(git-gutter:deleted ((,class (:inherit diff-removed))))
-   `(git-gutter:modified ((,class (:inherit diff-changed))))
-   `(git-gutter+-added ((,class (:inherit diff-added))))
-   `(git-gutter+-deleted ((,class (:inherit diff-removed))))
-   `(git-gutter+-modified ((,class (:inherit diff-changed))))
-   `(git-gutter-fr:added ((,class (:inherit diff-added :foreground ,aero-faded-green))))
-   `(git-gutter-fr:deleted ((,class (:inherit diff-removed :foreground ,aero-faded-red))))
-   `(git-gutter-fr:modified ((,class (:inherit diff-changed :foreground ,aero-faded-orange))))
+   `(git-gutter:added ((,class (:foreground ,aero-normal-green))))
+   `(git-gutter:deleted ((,class (:foreground ,aero-normal-red))))
+   `(git-gutter:modified ((,class (:foreground ,aero-normal-teal))))
+   `(git-gutter+:added ((,class (:inherit git-gutter:added))))
+   `(git-gutter+:deleted ((,class (:inherit git-gutter:deleted))))
+   `(git-gutter+:modified ((,class (:inherit git-gutter:modified))))
+   `(git-gutter-fr:added ((,class (:inherit git-gutter:added))))
+   `(git-gutter-fr:deleted ((,class (:inherit git-gutter:deleted))))
+   `(git-gutter-fr:modified ((,class (:inherit git-gutter:modified))))
 
    ;; flyspell
    `(flyspell-duplicate ((t (:underline (:color ,aero-base3 :style line)))))
