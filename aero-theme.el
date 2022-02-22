@@ -190,11 +190,11 @@
    `(tab-bar-tab ((t (:inherit mode-line :overline ,aero-space-base))))
    `(tab-bar-tab-inactive ((t (:inherit mode-line-inactive :slant italic))))
    `(hl-line ((t (:background ,aero-bg-alt))))
-   `(region ((t (:background ,aero-base11 :foreground ,aero-bg))))
-   `(highlight ((t (:background ,aero-base11 :foreground ,aero-bg))))
+   `(region ((t (:background ,aero-region-bg :foreground ,aero-bg))))
+   `(highlight ((t (:background ,aero-region-bg :foreground ,aero-bg))))
    `(secondary-selection ((t (:background ,aero-base0))))
-   `(minibuffer-prompt ((t (:inherit default :foreground ,aero-normal-green :bold t))))
-   `(vertical-border ((t (:foreground ,aero-base2 :background ,aero-bg))))
+   `(minibuffer-prompt ((t (:inherit default :foreground ,aero-region-bg :bold t))))
+   `(vertical-border ((t (:foreground ,aero-space-magenta :background ,aero-bg))))
    `(window-divider ((t (:inherit vertical-border))))
    `(window-divider-first-pixel ((t (:inherit vertical-border :foreground ,aero-bg))))
    `(window-divider-last-pixel ((t (:inherit vertical-border :foreground ,aero-bg))))
@@ -208,13 +208,13 @@
    `(homoglyph ((t (:foreground ,aero-bright-yellow))))
 
    ;; Built-in syntax
-   `(font-lock-builtin-face ((t (:foreground ,aero-bright-blue :slant italic))))
+   `(font-lock-builtin-face ((t (:foreground ,aero-bright-black :slant italic))))
    `(font-lock-constant-face ((t (:foreground ,aero-base4 :weight bold))))
    `(font-lock-comment-face ((t (:foreground ,aero-comment :background ,aero-comment-bg :slant italic))))
-   `(font-lock-function-name-face ((t (:foreground ,aero-normal-orange))))
+   `(font-lock-function-name-face ((t (:foreground ,aero-bright-orange))))
    `(font-lock-keyword-face ((t (:foreground ,aero-normal-green :weight bold))))
    `(font-lock-string-face ((t (:foreground ,aero-base10 :slant italic))))
-   `(font-lock-variable-name-face ((t (:foreground ,aero-bright-orange))))
+   `(font-lock-variable-name-face ((t (:foreground ,aero-bright-green))))
    `(font-lock-type-face ((t (:foreground ,aero-bright-blue))))
    `(font-lock-warning-face ((t (:foreground ,aero-bright-yellow :bold t))))
    `(font-lock-doc-face ((t (:foreground ,aero-base3 :bold t))))
@@ -258,12 +258,12 @@
    `(lsp-ui-doc-background ((t (:background ,aero-act1 :box (:line-width 2 :color ,aero-space-base)))))
    `(lsp-ui-doc-header ((t (:foreground ,aero-space-base :background ,aero-act1 :underline ,aero-space-base))))
    `(lsp-headerline-breadcrumb-separator-face ((t (:height 0.8 :foreground ,aero-space-base))))
-   `(lsp-ui-sideline-global ((t (:foreground ,aero-space-base :background ,aero-act1 :height 0.7))))
+   `(lsp-ui-sideline-global ((t (:foreground ,aero-space-base-dim :background ,aero-act1 :height 0.7))))
    `(lsp-ui-sideline-symbol ((t (:foreground ,aero-space-base :background ,aero-act1 :height 0.7))))
    `(lsp-ui-sideline-symbol-info ((t (:foreground ,aero-space-base :background ,aero-act1 :height 0.7 :slant italic))))
    `(lsp-ui-sideline-code-action ((t (:foreground ,aero-base6 :underline t))))
    `(lsp-ui-sideline-current-symbol ((t (:background ,aero-act1 :foreground ,aero-brilliant-black :height 0.7 :weight bold))))
-   `(lsp-face-highlight-read ((t (:background nil :foreground nil :underline ,aero-base11))))
+   `(lsp-face-highlight-read ((t (:background ,aero-base1 :foreground nil :underline ,aero-region-bg))))
 
    ;; Displaying formfeed chars
    `(page-break-lines ((t (:foreground ,aero-base2))))
@@ -420,9 +420,9 @@
    `(company-tooltip-annotation-selection ((t (:inherit company-tooltip-annotation))))
    `(company-template-field ((t (:foreground ,aero-brilliant-black :background ,aero-bright-yellow))))
    `(company-echo-common ((,class (:background ,aero-base4 :foreground ,aero-bg))))
-   `(company-preview ((,class (:background ,aero-ttip-bg :foreground ,aero-ttip))))
+   `(company-preview ((,class (:inherit tooltip))))
    `(company-preview-common ((,class (:background ,aero-ttip-bg :foreground ,aero-base4))))
-   `(company-tooltip ((,class (:background ,aero-ttip-bg :foreground ,aero-ttip))))
+   `(company-tooltip ((,class (:inherit tooltip :background nil))))
    `(company-tooltip-annotation ((,class (:foreground ,aero-bright-blue))))
    `(company-tooltip-common ((,class (:background ,aero-ttip-bg :foreground ,aero-normal-magenta))))
    `(company-tooltip-common-selection ((,class (:foreground ,aero-normal-magenta))))
@@ -436,7 +436,7 @@
    `(evil-ex-substitute-replacement ((,class (:background ,aero-bright-green :foreground ,aero-bg))))
 
    ;; tool tips
-   `(tooltip ((t (:foreground ,aero-normal-yellow :background ,aero-base0))))
+   `(tooltip ((t (:background ,aero-ttip-bg :foreground ,aero-ttip))))
 
    ;; term
    `(term-color-black ((t (:foreground ,aero-base1 :background ,aero-base0))))
