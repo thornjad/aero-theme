@@ -164,6 +164,7 @@
       ;; (aero-brilliant-blue    "#00005f")
       ;; (aero-brilliant-cyan    "#46d9ff")
       ;; (aero-brilliant-red       "#5f0000")
+      (aero-space-magenta "a45bad")
       )
   (custom-theme-set-faces
    'aero
