@@ -156,7 +156,7 @@
    `(font-lock-keyword-face ((t (:foreground ,aero-normal-yellow))))
    `(font-lock-string-face ((t (:foreground ,aero-bright-green :slant italic))))
    `(font-lock-variable-name-face ((t (:foreground ,aero-normal-orange))))
-   `(font-lock-type-face ((t (:foreground ,aero-grey5 :slant italic))))
+   `(font-lock-type-face ((t (:foreground ,aero-normal-blue :slant italic))))
    `(font-lock-warning-face ((t (:foreground ,aero-bright-yellow :bold t))))
    `(font-lock-doc-face ((t (:foreground ,aero-grey3 :bold t))))
 
