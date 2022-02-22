@@ -225,17 +225,19 @@
    `(warning ((t (:foreground ,aero-bright-yellow :bold t))))
 
    ;; Aero modeline
-   `(aero/modeline-evil-normal ((t (:foreground ,aero-bg :background ,aero-normal-cyan))))
-   `(aero/modeline-evil-insert ((t (:foreground ,aero-bg :background ,aero-normal-magenta))))
-   `(aero/modeline-evil-visual ((t (:foreground ,aero-bg :background ,aero-normal-green))))
-   `(aero/modeline-evil-replace ((t (:foreground ,aero-bg :background ,aero-bright-orange))))
-   `(aero/modeline-evil-emacs ((t (:foreground ,aero-bg :background ,aero-bright-red))))
+   `(aero/modeline-evil-normal ((t (:foreground ,aero-normal-cyan))))
+   `(aero/modeline-evil-insert ((t (:foreground ,aero-normal-magenta))))
+   `(aero/modeline-evil-visual ((t (:foreground ,aero-normal-green))))
+   `(aero/modeline-evil-replace ((t (:foreground ,aero-bright-orange))))
+   `(aero/modeline-evil-emacs ((t (:foreground ,aero-bright-red))))
    `(aero/modeline-window-number ((t (:foreground ,aero-act1 :background ,aero-space-base))))
    `(aero/modeline-major-mode-active ((t (:foreground ,aero-space-base :bold t :background nil))))
    `(aero/modeline-major-mode-inactive ((t (:inherit aero/modeline-major-mode-active))))
    `(aero/modeline-modified ((t (:inherit error :height 180))))
    `(aero/modeline-not-modified ((t (:inherit success :height 180))))
    `(aero/modeline-read-only ((t (:inherit warning :height 180))))
+   `(aero/modeline-bar ((t (:background ,aero-space-magenta))))
+   `(aero/modeline-bar-inactive ((t (:background ,aero-space-base))))
 
    ;; Customize faces
    `(widget-field ((t (:background ,aero-base1))))
