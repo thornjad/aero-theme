@@ -184,8 +184,8 @@
    `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
    `(header-line
      ((t (:inherit mode-line :height ,aero-theme-font-height
-          :box (:line-width 2 :color ,aero-space-base-dimmer)
-          :background ,aero-act1 :underline nil :overline nil))))
+          :box (:line-width 1 :color ,aero-space-base-dimmer)
+          :background ,aero-space-base-even-dimmer :underline nil :overline nil))))
    `(tab-bar ((t (:inherit mode-line-inactive :overline nil :box (:line-width 3 :color ,(if-solaire aero-bg-alt aero-bg))))))
    `(tab-bar-tab ((t (:inherit mode-line :overline ,aero-space-base))))
    `(tab-bar-tab-inactive ((t (:inherit mode-line-inactive :slant italic))))
