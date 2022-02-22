@@ -648,8 +648,8 @@
    `(magit-tag ((t (:foreground ,aero-bright-yellow))))
 
    ;; git-gutter and git-gutter-fringe
-   `(git-gutter:added ((,class (:foreground ,aero-normal-green))))
-   `(git-gutter:deleted ((,class (:foreground ,aero-normal-red))))
+   `(git-gutter:added ((,class (:foreground ,aero-faded-green))))
+   `(git-gutter:deleted ((,class (:foreground ,aero-bright-red))))
    `(git-gutter:modified ((,class (:foreground ,aero-normal-teal))))
    `(git-gutter+:added ((,class (:inherit git-gutter:added))))
    `(git-gutter+:deleted ((,class (:inherit git-gutter:deleted))))
