@@ -65,7 +65,8 @@
 
 (defcustom aero-theme-font-height 100
   "Base font size."
-  :group 'aero-theme)
+  :group 'aero-theme
+  :type 'integer)
 
 (defcustom aero-theme-font
   (when (window-system)
@@ -76,7 +77,8 @@
 		 ((x-list-fonts "Ubuntu Mono") "Ubuntu Mono")
 		 (t "monospace")))
   "Base monospace font. Default depends on installed fonts."
-  :group 'aero-theme)
+  :group 'aero-theme
+  :type 'string)
 
 (defcustom aero-theme-variable-pitch-font
   (when (window-system)
@@ -86,7 +88,8 @@
           ((x-list-fonts "Roboto") "Roboto")
           (t "Sans Serif")))
   "Base variable pitch font. Default depends on installed fonts."
-  :group 'aero-theme)
+  :group 'aero-theme
+  :type 'string)
 
 (defmacro if-solaire (pos neg)
   "Return POS if Solaire is activated, otherwise NEG."
