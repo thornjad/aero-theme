@@ -198,7 +198,7 @@
    `(highlight ((t (:background ,aero-region-bg :foreground ,aero-bg))))
    `(secondary-selection ((t (:background ,aero-base0))))
    `(minibuffer-prompt ((t (:foreground ,aero-region-dark :bold t))))
-   `(vertical-border ((t (:foreground ,aero-space-base :background ,aero-bg))))
+   `(vertical-border ((t (:foreground ,aero-base12 :background ,aero-bg))))
    `(window-divider ((t (:inherit vertical-border))))
    `(window-divider-first-pixel ((t (:inherit vertical-border :foreground ,aero-bg))))
    `(window-divider-last-pixel ((t (:inherit vertical-border :foreground ,aero-bg))))
