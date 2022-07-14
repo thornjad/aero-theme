@@ -573,14 +573,14 @@
    `(swiper-match-face-4 ((t (:inherit swiper-match-face-1))))
 
    ;; ivy
-   `(ivy-current-match ((t (:inherit highlight :foreground ,aero-bg))))
-   `(ivy-minibuffer-match-face-1 ((t (:foreground ,aero-fg))))
-   `(ivy-minibuffer-match-face-2 ((t (:foreground ,aero-fg :weight bold))))
-   `(ivy-minibuffer-match-face-3 ((t (:foreground ,aero-fg :weight bold))))
-   `(ivy-minibuffer-match-face-4 ((t (:foreground ,aero-fg :weight bold))))
+   `(ivy-current-match ((t (:background ,aero-base12))))
+   `(ivy-minibuffer-match-face-1 ((t (:background nil))))
+   `(ivy-minibuffer-match-face-2 ((t (:background ,aero-space-base-even-dimmer :weight bold))))
+   `(ivy-minibuffer-match-face-3 ((t (:background ,aero-space-base-even-dimmer))))
+   `(ivy-minibuffer-match-face-4 ((t (:slant italic))))
 
    ;; ivy-posframe
-   `(ivy-posframe ((t (:background ,aero-modeline-bg))))
+   `(ivy-posframe ((t (:background ,aero-base12))))
    `(ivy-posframe-border ((t (:box (:color ,aero-space-base :width 2) :background ,aero-space-base))))
 
    ;; magit
