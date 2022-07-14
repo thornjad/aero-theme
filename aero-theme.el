@@ -101,7 +101,7 @@
 (let ((class '((class color) (min-colors #xFF)))
       (aero-bg "#fefbf2")
       (aero-bg-alt "#f6f3e7")
-      (aero-fg "#525C5A")
+      (aero-fg "#383b45")
 
       (aero-space-base     "#655370")
       (aero-space-base-dim "#a094a2")
