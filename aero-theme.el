@@ -649,6 +649,8 @@
    `(magit-signature-untrusted ((t (:foreground ,aero-normal-blue))))
    `(magit-tag ((t (:foreground ,aero-bright-yellow))))
 
+   `(blamer-face ((t (:inherit default :foreground ,aero-comment :slant italic))))
+
    ;; git-gutter and git-gutter-fringe
    `(git-gutter:added ((,class (:foreground ,aero-faded-green))))
    `(git-gutter:deleted ((,class (:foreground ,aero-bright-red))))
