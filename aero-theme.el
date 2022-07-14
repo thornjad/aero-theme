@@ -349,11 +349,12 @@
    ;; rjsx
    `(rjsx-attr ((t (:inherit js2-object-property :slant italic))))
 
-   ;; popup
-   `(popup-face ((t (:underline nil :foreground ,aero-normal-yellow :background ,aero-base0))))
+   ;; popups and tooltips
+   `(tooltip ((t (:background ,aero-ttip-bg :foreground ,aero-ttip))))
+   `(popup-face ((t (:inherit tooltip))))
    `(popup-menu-mouse-face ((t (:underline nil :foreground ,aero-fg :background ,aero-normal-green))))
    `(popup-menu-selection-face ((t (:underline nil :foreground ,aero-fg :background ,aero-normal-green))))
-   `(popup-tip-face ((t (:underline nil :foreground ,aero-base4 :background ,aero-base1))))
+   `(popup-tip-face ((t (:inherit tooltip))))
 
    ;; counsel
    `(counsel-M-x-key ((t (:foreground ,aero-bright-yellow))))
@@ -440,9 +441,6 @@
    `(evil-ex-lazy-highlight ((,class (:background ,aero-normal-green :foreground ,aero-bg))))
    `(evil-ex-substitute-matches ((,class (:background ,aero-bright-red :foreground ,aero-bg))))
    `(evil-ex-substitute-replacement ((,class (:background ,aero-bright-green :foreground ,aero-bg))))
-
-   ;; tool tips
-   `(tooltip ((t (:background ,aero-ttip-bg :foreground ,aero-ttip))))
 
    ;; term
    `(term-color-black ((t (:foreground ,aero-base1 :background ,aero-base0))))
