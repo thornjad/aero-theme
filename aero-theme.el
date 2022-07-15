@@ -280,6 +280,9 @@
    `(highlight-indentation-current-column-face ((t (:background ,aero-base1))))
    `(highlight-indentation-face ((t (:background ,aero-base0))))
 
+   ;; Highlight sexp mode
+   `(hl-sexp-face ((t (:background ,aero-bg-alt))))
+
    ;; indent-guide
    `(indent-guide-face ((t (:background ,aero-bg :foreground ,aero-base0 :slant normal))))
 
