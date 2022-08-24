@@ -271,6 +271,13 @@
    `(lsp-ui-sideline-current-symbol ((t (:background ,aero-act1 :foreground ,aero-brilliant-black :height 0.7 :weight bold))))
    `(lsp-face-highlight-read ((t (:background ,aero-base1 :foreground nil :underline ,aero-region-bg))))
 
+   ;; Eglot
+   `(eglot-highlight-symbol-face ((t (:background ,aero-base1 :foreground nil :underline ,aero-region-bg))))
+
+   ;; eldoc-box
+   `(eldoc-box-body ((t (:background ,aero-act1))))
+   `(eldoc-box-border ((t (:background ,aero-space-base))))
+
    ;; Displaying formfeed chars
    `(page-break-lines ((t (:foreground ,aero-base2))))
    `(formfeeder-line ((t (:strike-through ,aero-base2
