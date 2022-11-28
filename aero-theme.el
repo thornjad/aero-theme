@@ -590,7 +590,7 @@
    `(ivy-minibuffer-match-face-4 ((t (:slant italic))))
 
    ;; ivy-posframe
-   `(ivy-posframe ((t (:background ,aero-base12))))
+   `(ivy-posframe ((t (:background ,aero-bg-alt))))
    `(ivy-posframe-border ((t (:box (:color ,aero-space-base :width 2) :background ,aero-space-base))))
 
    ;; magit
