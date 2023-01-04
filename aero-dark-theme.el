@@ -1,10 +1,10 @@
 ;;; aero-dark-theme.el --- A practical theme -*- lexical-binding: t -*-
 ;;
 ;; Author: Jade Michael Thornton
-;; Copyright (c) 2019-2022 Jade Michael Thornton
+;; Copyright (c) 2019-2023 Jade Michael Thornton
 ;; URL: https://gitlab.com/thornjad/aero-theme
 ;; Package-Requires: ((emacs "25.1"))
-;; Version: 1.2.3
+;; Version: 1.3.0
 ;;
 ;; This file is not part of GNU Emacs
 ;;

@@ -1,10 +1,10 @@
 ;;; aero-theme.el --- A practical theme -*- lexical-binding: t; -*-
 ;;
 ;; Author: Jade Michael Thornton
-;; Copyright (c) 2019-2022 Jade Michael Thornton
+;; Copyright (c) 2019-2023 Jade Michael Thornton
 ;; URL: https://gitlab.com/thornjad/aero-theme
 ;; Package-Requires: ((emacs "25.1"))
-;; Version: 1.2.3
+;; Version: 1.3.0
 ;;
 ;; This file is not part of GNU Emacs
 ;;
@@ -43,7 +43,8 @@
 ;; right now.
 ;;
 ;; The easiest method of installation, if you have it set up already, is with
-;; `straight.el' and `use-package':
+;; `use-package' (built-in to Emacs 29) and the fetcher of your choice. If you
+;; already have `straight' set up, here would be the recipe:
 ;;
 ;;     (use-package aero-theme
 ;;       :straight (:host gitlab :repo "thornjad/aero-theme" :branch "main"))
