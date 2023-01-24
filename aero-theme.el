@@ -236,7 +236,7 @@
    `(aero/modeline-evil-replace ((t (:foreground ,aero-bright-orange))))
    `(aero/modeline-evil-emacs ((t (:foreground ,aero-bright-red))))
    `(aero/modeline-window-number ((t (:foreground ,aero-act1 :background ,aero-space-base))))
-   `(aero/modeline-major-mode-active ((t (:foreground ,aero-space-base :bold t :background nil))))
+   `(aero/modeline-major-mode-active ((t (:foreground ,aero-space-base :bold t :background unspecified))))
    `(aero/modeline-major-mode-inactive ((t (:inherit aero/modeline-major-mode-active))))
    `(aero/modeline-modified ((t (:inherit error :height 180))))
    `(aero/modeline-not-modified ((t (:inherit success :height 180))))
@@ -270,10 +270,10 @@
    `(lsp-ui-sideline-symbol-info ((t (:foreground ,aero-space-base :background ,aero-act1 :height 0.7 :slant italic))))
    `(lsp-ui-sideline-code-action ((t (:foreground ,aero-base6 :underline t))))
    `(lsp-ui-sideline-current-symbol ((t (:background ,aero-act1 :foreground ,aero-brilliant-black :height 0.7 :weight bold))))
-   `(lsp-face-highlight-read ((t (:background ,aero-base1 :foreground nil :underline ,aero-region-bg))))
+   `(lsp-face-highlight-read ((t (:background ,aero-base1 :foreground unspecified :underline ,aero-region-bg))))
 
    ;; Eglot
-   `(eglot-highlight-symbol-face ((t (:background ,aero-base1 :foreground nil :underline ,aero-region-bg))))
+   `(eglot-highlight-symbol-face ((t (:background ,aero-base1 :foreground unspecified :underline ,aero-region-bg))))
 
    ;; eldoc-box
    `(eldoc-box-body ((t (:background ,aero-act1))))
@@ -332,12 +332,12 @@
    `(diff-indicator-removed ((t (:inherit diff-removed))))
 
    ;; smerge
-   `(smerge-upper ((t (:background nil))))
-   `(smerge-lower ((t (:background nil))))
+   `(smerge-upper ((t (:background unspecified))))
+   `(smerge-lower ((t (:background unspecified))))
    `(smerge-refined-added ((t (:inherit diff-added))))
    `(smerge-refined-changed ((t (:inherit diff-changed))))
    `(smerge-refined-removed ((t (:inherit diff-removed))))
-   `(smerge-base ((t (:background nil))))
+   `(smerge-base ((t (:background unspecified))))
    `(smerge-markers
      ((t (:inherit font-lock-comment-face :weight bold :background ,aero-base0))))
 
@@ -345,17 +345,17 @@
    `(js2-warning ((t (:underline (:color ,aero-bright-yellow :style wave)))))
    `(js2-error ((t (:underline (:color ,aero-bright-red :style wave)))))
    `(js2-external-variable ((t (:underline (:color ,aero-normal-blue :style wave)))))
-   `(js2-jsdoc-tag ((t (:background nil :foreground ,aero-base2))))
-   `(js2-jsdoc-type ((t (:background nil :foreground ,aero-base3))))
-   `(js2-jsdoc-value ((t (:background nil :foreground ,aero-base4))))
+   `(js2-jsdoc-tag ((t (:background unspecified :foreground ,aero-base2))))
+   `(js2-jsdoc-type ((t (:background unspecified :foreground ,aero-base3))))
+   `(js2-jsdoc-value ((t (:background unspecified :foreground ,aero-base4))))
    `(js2-function-param ((t (:inherit font-lock-variable-name-face :slant italic))))
    `(js2-function-call ((t (:inherit font-lock-function-name-face))))
    `(js2-object-property ((t (:inherit font-lock-variable-name-face))))
-   `(js2-instance-member ((t (:background nil :foreground ,aero-bright-yellow))))
-   `(js2-private-member ((t (:background nil :foreground ,aero-bright-yellow))))
-   `(js2-private-function-call ((t (:background nil :foreground ,aero-normal-blue))))
-   `(js2-jsdoc-html-tag-name ((t (:background nil :foreground ,aero-base3))))
-   `(js2-jsdoc-html-tag-delimiter ((t (:background nil :foreground ,aero-base4))))
+   `(js2-instance-member ((t (:background unspecified :foreground ,aero-bright-yellow))))
+   `(js2-private-member ((t (:background unspecified :foreground ,aero-bright-yellow))))
+   `(js2-private-function-call ((t (:background unspecified :foreground ,aero-normal-blue))))
+   `(js2-jsdoc-html-tag-name ((t (:background unspecified :foreground ,aero-base3))))
+   `(js2-jsdoc-html-tag-delimiter ((t (:background unspecified :foreground ,aero-base4))))
 
    ;; rjsx
    `(rjsx-attr ((t (:inherit js2-object-property :slant italic))))
@@ -440,7 +440,7 @@
    `(company-echo-common ((,class (:background ,aero-base4 :foreground ,aero-bg))))
    `(company-preview ((,class (:inherit tooltip))))
    `(company-preview-common ((,class (:background ,aero-ttip-bg :foreground ,aero-base4))))
-   `(company-tooltip ((,class (:inherit tooltip :background nil))))
+   `(company-tooltip ((,class (:inherit tooltip :background unspecified))))
    `(company-tooltip-annotation ((,class (:foreground ,aero-bright-blue))))
    `(company-tooltip-common ((,class (:background ,aero-ttip-bg :foreground ,aero-normal-magenta))))
    `(company-tooltip-common-selection ((,class (:foreground ,aero-normal-magenta))))
@@ -585,7 +585,7 @@
 
    ;; ivy
    `(ivy-current-match ((t (:background ,aero-base12))))
-   `(ivy-minibuffer-match-face-1 ((t (:background nil))))
+   `(ivy-minibuffer-match-face-1 ((t (:background unspecified))))
    `(ivy-minibuffer-match-face-2 ((t (:background ,aero-space-base-even-dimmer :weight bold))))
    `(ivy-minibuffer-match-face-3 ((t (:background ,aero-space-base-even-dimmer))))
    `(ivy-minibuffer-match-face-4 ((t (:slant italic))))

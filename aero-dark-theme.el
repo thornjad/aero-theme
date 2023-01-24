@@ -216,7 +216,7 @@
    `(lsp-ui-sideline-symbol ((t (:foreground ,aero-grey6 :background ,aero-bg-alt :height 0.7))))
    `(lsp-ui-sideline-symbol-info ((t (:foreground ,aero-grey6 :background ,aero-bg-alt :height 0.7 :slant italic))))
    `(lsp-ui-sideline-current-symbol ((t (:background ,aero-grey6 :foreground ,aero-brilliant-black :height 0.7 :weight bold))))
-   `(lsp-face-highlight-read ((t (:background ,aero-grey6 :foreground nil))))
+   `(lsp-face-highlight-read ((t (:background ,aero-grey6 :foreground unspecified))))
 
    ;; Displaying formfeed chars
    `(page-break-lines ((t (:foreground ,aero-grey2))))
@@ -270,12 +270,12 @@
    `(diff-indicator-removed ((t (:inherit diff-removed))))
 
    ;; smerge
-   `(smerge-upper ((t (:background nil))))
-   `(smerge-lower ((t (:background nil))))
+   `(smerge-upper ((t (:background unspecified))))
+   `(smerge-lower ((t (:background unspecified))))
    `(smerge-refined-added ((t (:inherit diff-added))))
    `(smerge-refined-changed ((t (:inherit diff-changed))))
    `(smerge-refined-removed ((t (:inherit diff-removed))))
-   `(smerge-base ((t (:background nil))))
+   `(smerge-base ((t (:background unspecified))))
    `(smerge-markers
      ((t (:inherit font-lock-comment-face :weight bold :background ,aero-grey0))))
 
@@ -283,17 +283,17 @@
    `(js2-warning ((t (:underline (:color ,aero-bright-yellow :style wave)))))
    `(js2-error ((t (:underline (:color ,aero-bright-red :style wave)))))
    `(js2-external-variable ((t (:underline (:color ,aero-normal-blue :style wave)))))
-   `(js2-jsdoc-tag ((t (:background nil :foreground ,aero-grey2))))
-   `(js2-jsdoc-type ((t (:background nil :foreground ,aero-grey3))))
-   `(js2-jsdoc-value ((t (:background nil :foreground ,aero-grey4))))
+   `(js2-jsdoc-tag ((t (:background unspecified :foreground ,aero-grey2))))
+   `(js2-jsdoc-type ((t (:background unspecified :foreground ,aero-grey3))))
+   `(js2-jsdoc-value ((t (:background unspecified :foreground ,aero-grey4))))
    `(js2-function-param ((t (:inherit font-lock-variable-name-face :slant italic))))
    `(js2-function-call ((t (:inherit font-lock-function-name-face))))
    `(js2-object-property ((t (:inherit font-lock-variable-name-face))))
-   `(js2-instance-member ((t (:background nil :foreground ,aero-bright-yellow))))
-   `(js2-private-member ((t (:background nil :foreground ,aero-bright-yellow))))
-   `(js2-private-function-call ((t (:background nil :foreground ,aero-normal-blue))))
-   `(js2-jsdoc-html-tag-name ((t (:background nil :foreground ,aero-grey3))))
-   `(js2-jsdoc-html-tag-delimiter ((t (:background nil :foreground ,aero-grey4))))
+   `(js2-instance-member ((t (:background unspecified :foreground ,aero-bright-yellow))))
+   `(js2-private-member ((t (:background unspecified :foreground ,aero-bright-yellow))))
+   `(js2-private-function-call ((t (:background unspecified :foreground ,aero-normal-blue))))
+   `(js2-jsdoc-html-tag-name ((t (:background unspecified :foreground ,aero-grey3))))
+   `(js2-jsdoc-html-tag-delimiter ((t (:background unspecified :foreground ,aero-grey4))))
 
    ;; rjsx
    `(rjsx-attr ((t (:inherit js2-object-property :slant italic))))
