@@ -739,8 +739,8 @@
    `(eshell-prompt ((t (:foreground ,aero-normal-blue))))
    `(eshell-ls-archive ((t (:foreground ,aero-base4))))
    `(eshell-ls-backup ((t (:foreground ,aero-base3))))
-   `(eshell-ls-clutter ((t (:foreground ,aero-bright-yellow :weight bold))))
-   `(eshell-ls-directory ((t (:foreground ,aero-normal-yellow))))
+   `(eshell-ls-clutter ((t (:foreground ,aero-bright-green :weight bold))))
+   `(eshell-ls-directory ((t (:foreground ,aero-normal-green))))
    `(eshell-ls-executable ((t (:weight bold))))
    `(eshell-ls-missing ((t (:foreground ,aero-bright-red :bold t))))
    `(eshell-ls-product ((t (:foreground ,aero-bright-red))))
@@ -751,6 +751,7 @@
 
    ;; eshell-prompt-extras
    `(epe-git-dir-face ((t (:inherit eshell-ls-directory :bold t))))
+   `(epe-dir-face ((t (:inherit eshell-ls-directory))))
 
    ;; wgrep
    `(wgrep-delete-face ((t (:strike-through ,aero-bright-red))))
