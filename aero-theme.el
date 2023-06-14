@@ -771,6 +771,9 @@
    ;; which-function-mode
    `(which-func ((t (:foreground ,aero-normal-blue))))
 
+   ;; shorthand
+   `(elisp-shorthand-font-lock-face ((t (:foreground unspecified :slant italic :weight bold))))
+
    ;; auto-dim-other-buffers
    `(auto-dim-other-buffers-face ((t (:background ,aero-normal-black)))))
 
