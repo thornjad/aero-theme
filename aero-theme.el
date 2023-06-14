@@ -271,6 +271,7 @@
    `(lsp-ui-sideline-code-action ((t (:foreground ,aero-base6 :underline t))))
    `(lsp-ui-sideline-current-symbol ((t (:background ,aero-act1 :foreground ,aero-brilliant-black :height 0.7 :weight bold))))
    `(lsp-face-highlight-read ((t (:background ,aero-base1 :foreground unspecified :underline ,aero-region-bg))))
+   `(lsp-face-highlight-write ((t (:background ,aero-base1 :foreground unspecified :underline ,aero-region-bg))))
 
    ;; Eglot
    `(eglot-highlight-symbol-face ((t (:background ,aero-base1 :foreground unspecified :underline ,aero-region-bg))))
