@@ -431,7 +431,7 @@
    `(hi-green-b ((t (:foreground ,aero-normal-green :weight bold))))
    `(hi-pink ((t (:foreground ,aero-normal-white :background ,aero-normal-magenta))))
    `(hi-red-b ((t (:foreground ,aero-bright-red :weight bold))))
-   `(hi-yellow ((t (:foreground ,aero-normal-white :background ,aero-bright-yellow))))
+   `(hi-yellow ((t (:background ,aero-base1 :foreground unspecified :underline ,aero-region-bg))))
 
    ;; company-mode
    `(company-scrollbar-bg ((t (:background ,aero-ttip-bg))))
