@@ -82,12 +82,11 @@
   :type 'string)
 
 (defcustom aero-theme-variable-pitch-font
-  (when (window-system)
-    (cond ((x-list-fonts "Ubuntu Light") "Ubuntu Light")
-          ((x-list-fonts "Source Sans Pro") "Source Sans Pro")
-          ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
-          ((x-list-fonts "Roboto") "Roboto")
-          (t "Sans Serif")))
+  (cond ((x-list-fonts "Ubuntu Light") "Ubuntu Light")
+        ((x-list-fonts "Source Sans Pro") "Source Sans Pro")
+        ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
+        ((x-list-fonts "Roboto") "Roboto")
+        (t "Sans Serif"))
   "Base variable pitch font. Default depends on installed fonts."
   :group 'aero-theme
   :type 'string)
