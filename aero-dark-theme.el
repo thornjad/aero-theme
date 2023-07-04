@@ -40,22 +40,25 @@
   :group 'aero-theme)
 
 (defcustom aero-theme-font
-  (cond
-   ((x-list-fonts "JetBrains Mono") "JetBrains Mono")
-   ((x-list-fonts "IBM Plex Mono") "IBM Plex Mono")
-	 ((x-list-fonts "Victor Mono") "Victor Mono")
-	 ((x-list-fonts "Ubuntu Mono") "Ubuntu Mono")
-	 (t "monospace"))
+  (if (window-system)
+      (cond
+       ((x-list-fonts "JetBrains Mono") "JetBrains Mono")
+       ((x-list-fonts "IBM Plex Mono") "IBM Plex Mono")
+	     ((x-list-fonts "Victor Mono") "Victor Mono")
+	     ((x-list-fonts "Ubuntu Mono") "Ubuntu Mono")
+	     (t "monospace"))
+    "monospace")
   "Base monospace font. Default depends on installed fonts."
   :group 'aero-theme)
 
 (defcustom aero-theme-variable-pitch-font
-  (when (window-system)
+  (if (window-system)
     (cond ((x-list-fonts "Ubuntu Light") "Ubuntu Light")
           ((x-list-fonts "Source Sans Pro") "Source Sans Pro")
           ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
           ((x-list-fonts "Roboto") "Roboto")
-          (t "Sans Serif")))
+          (t "Sans Serif"))
+    "Sans Serif")
   "Base variable pitch font. Default depends on installed fonts."
   :group 'aero-theme)
 
