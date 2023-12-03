@@ -595,7 +595,7 @@
 
    ;; ivy-posframe
    `(ivy-posframe ((t (:background ,aero-bg-alt))))
-   `(ivy-posframe-border ((t (:box (:color ,aero-space-base :width 2) :background ,aero-space-base))))
+   `(ivy-posframe-border ((t (:box (:color ,aero-space-base :line-width 2) :background ,aero-space-base))))
 
    ;; magit
    `(magit-bisect-bad ((t (:foreground ,aero-bright-red))))
