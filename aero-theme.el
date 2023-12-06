@@ -291,8 +291,12 @@
    `(highlight-indentation-current-column-face ((t (:background ,aero-base1))))
    `(highlight-indentation-face ((t (:background ,aero-base0))))
 
+   ;; Highlight selection
+   `(selection-highlight-mode-match-face ((t (:inherit eglot-highlight-symbol-face :underline ,aero-region-bg))))
+   `(selection-highlight-mode-alternate-match-face ((t (:inherit eglot-highlight-symbol-face :underline ,aero-region-bg))))
+
    ;; Highlight sexp mode
-   `(hl-sexp-face ((t (:background ,aero-bg-alt))))
+   `(hl-sexp-face ((t (:inherit selection-highlight-mode-match-face))))
 
    ;; indent-guide
    `(indent-guide-face ((t (:background ,aero-bg :foreground ,aero-base0 :slant normal))))
