@@ -711,11 +711,6 @@
    `(font-latex-warning-face ((t (:foreground ,aero-bright-red :weight bold))))
    `(preview-face ((t (:background ,aero-base0))))
 
-   ;; mu4e
-   `(mu4e-header-key-face ((t (:foreground ,aero-normal-green :weight bold ))))
-   `(mu4e-unread-face ((t (:foreground ,aero-normal-blue :weight bold ))))
-   `(mu4e-highlight-face ((t (:foreground ,aero-normal-green))))
-
    ;; shell script
    `(sh-quoted-exec ((t (:foreground ,aero-normal-magenta))))
    `(sh-heredoc ((t (:foreground ,aero-bright-yellow))))
