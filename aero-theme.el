@@ -71,12 +71,12 @@
 
 (defcustom aero-theme-font
   (if (window-system)
-    (cond
-     ((x-list-fonts "JetBrains Mono") "JetBrains Mono")
-     ((x-list-fonts "IBM Plex Mono") "IBM Plex Mono")
-		 ((x-list-fonts "Victor Mono") "Victor Mono")
-		 ((x-list-fonts "Ubuntu Mono") "Ubuntu Mono")
-		 (t "monospace"))
+      (cond
+       ((x-list-fonts "JetBrains Mono") "JetBrains Mono")
+       ((x-list-fonts "IBM Plex Mono") "IBM Plex Mono")
+		   ((x-list-fonts "Victor Mono") "Victor Mono")
+		   ((x-list-fonts "Ubuntu Mono") "Ubuntu Mono")
+		   (t "monospace"))
     "monospace")
   "Base monospace font. Default depends on installed fonts."
   :group 'aero-theme
@@ -84,11 +84,11 @@
 
 (defcustom aero-theme-variable-pitch-font
   (if (window-system)
-    (cond ((x-list-fonts "Ubuntu Light") "Ubuntu Light")
-        ((x-list-fonts "Source Sans Pro") "Source Sans Pro")
-        ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
-        ((x-list-fonts "Roboto") "Roboto")
-        (t "Sans Serif"))
+      (cond ((x-list-fonts "Ubuntu Light") "Ubuntu Light")
+            ((x-list-fonts "Source Sans Pro") "Source Sans Pro")
+            ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
+            ((x-list-fonts "Roboto") "Roboto")
+            (t "Sans Serif"))
     "Sans Serif")
   "Base variable pitch font. Default depends on installed fonts."
   :group 'aero-theme
@@ -121,7 +121,7 @@
       (aero-base8          "#d5c4a1")
       ;; (aero-base9          "#9676ac")
       (aero-base10 "#8B887D")
-      (aero-region-bg "#82aec5")
+      (aero-region-bg "#efeae9")
       (aero-region-dark "#737063")
       (aero-base12 "#ECE9E0")
       (aero-base13 "#373426")
@@ -197,8 +197,8 @@
    `(tab-bar-tab ((t (:inherit mode-line :overline ,aero-space-base))))
    `(tab-bar-tab-inactive ((t (:inherit mode-line-inactive :slant italic))))
    `(hl-line ((t (:background ,aero-bg-alt))))
-   `(region ((t (:background ,aero-region-bg :foreground ,aero-bg))))
-   `(highlight ((t (:background ,aero-region-bg :foreground ,aero-bg))))
+   `(region ((t (:background ,aero-region-bg :foreground nil))))
+   `(highlight ((t (:inherit region))))
    `(secondary-selection ((t (:background ,aero-base0))))
    `(minibuffer-prompt ((t (:foreground ,aero-region-dark :bold t))))
    `(vertical-border ((t (:foreground ,aero-base12 :background ,aero-bg))))
