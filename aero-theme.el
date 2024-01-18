@@ -121,7 +121,7 @@
       (aero-base8          "#d5c4a1")
       ;; (aero-base9          "#9676ac")
       (aero-base10 "#8B887D")
-      (aero-region-bg "#efeae9")
+      (aero-region-bg "#d6d4d3")
       (aero-region-dark "#737063")
       (aero-base12 "#ECE9E0")
       (aero-base13 "#373426")
