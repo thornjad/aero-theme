@@ -775,6 +775,9 @@
    ;; which-function-mode
    `(which-func ((t (:foreground ,aero-normal-blue))))
 
+   ;; virtual-comment
+   `(virtual-comment-face ((t (:inherit highlight :foreground ,aero-base4))))
+
    ;; shorthand
    `(elisp-shorthand-font-lock-face ((t (:foreground unspecified :slant italic :weight bold))))
 
