@@ -485,7 +485,9 @@
    `(message-mml ((t (:foreground ,aero-normal-green :weight bold))))
 
    ;; org-mode
-   `(org-agenda-date-today ((t (:foreground ,aero-fg :weight bold :slant italic))))
+   `(org-agenda-date-today ((t (:foreground ,aero-fg
+                                :background ,aero-space-base-dimmer
+                                :weight bold :slant italic))))
    `(org-agenda-done ((t (:foreground ,aero-normal-blue))))
    `(org-agenda-structure ((t (:inherit font-lock-comment-face))))
    `(org-archived ((t (:foreground ,aero-fg :weight bold))))
