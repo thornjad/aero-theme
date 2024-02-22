@@ -136,6 +136,13 @@
       (aero-comment "#829293")
       (aero-comment-bg "#ecf3ec")
 
+      (aero-org-label-bg "#d6d4d3")
+      (aero-todo "#dca3a3")
+      (aero-done "#afd8af")
+      (aero-note "#5f7f5f")
+      (aero-temp "#d0bf8f")
+      (aero-hack "#d0bf8f")
+
       (aero-normal-black    "#4E4B3D")
       (aero-normal-white    "#ECF3F3")
       (aero-normal-red      "#5f081e")
@@ -510,7 +517,6 @@
    `(org-headline-done ((t (:foreground ,aero-normal-blue :strike-through t))))
    `(org-hide ((t (:foreground ,aero-bg))))
    `(org-indent ((t (:inherit (org-hide fixed-pitch)))))
-   `(org-modern-priority ((t (:inherit org-priority))))
    `(org-latex-and-related ((t (:strike-through t))))
    `(org-level-1 ((t (:height 1.13 :weight bold))))
    `(org-level-2 ((t (:height 1.09 :weight bold))))
@@ -532,10 +538,29 @@
    `(org-table ((t (:inherit fixed-pitch :foreground ,aero-normal-blue))))
    `(org-tag ((t (:inherit (shadow fixed-pitch) :bold t :weight bold :height 0.8))))
    `(org-time-grid ((t (:foreground ,aero-bright-yellow))))
-   `(org-todo ((t (:foreground ,aero-bright-red :weight bold :bold t))))
+   `(org-todo ((t (:foreground ,aero-todo :weight bold :bold t))))
    `(org-upcoming-deadline ((t (:inherit font-lock-keyword-face))))
    `(org-verbatim ((t (:inherit (shadow fixed-pitch)))))
    `(org-warning ((t (:foreground ,aero-bright-red :weight bold :underline nil :bold t))))
+
+   ;; org-modern
+   `(org-modern-label ((t (:weight regular :underline nil
+                           :height 0.8 :background ,aero-org-label-bg
+                           :box (:line-width 1 :color ,aero-org-label-bg)))))
+   `(org-modern-todo ((t (:inherit (org-todo org-modern-label)
+                          :weight semibold :foreground ,aero-normal-black
+                          :background ,aero-todo
+                          :box (:line-width 1 :color ,aero-todo)))))
+   `(org-modern-done ((t (:inherit org-modern-label :foreground ,aero-normal-black
+                          :background ,aero-done
+                          :box (:line-width 1 :color ,aero-done)))))
+   `(org-modern-date-active ((t (:inherit org-modern-label :box nil))))
+   `(org-modern-date-inactive ((t (:inherit org-modern-date-active))))
+   `(org-modern-time-active ((t (:inherit org-modern-date-active
+                                 :weight semibold :foreground ,aero-normal-black))))
+   `(org-modern-time-inactive ((t (:inherit org-modern-date-inactive
+                                   :weight semibold :foreground ,aero-normal-black))))
+   `(org-modern-priority ((t (:inherit org-priority))))
 
    ;; org-habit
    `(org-habit-clear-face ((t (:background ,aero-normal-blue))))
