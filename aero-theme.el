@@ -197,7 +197,7 @@
    `(tab-bar-tab ((t (:inherit mode-line :overline ,aero-space-base))))
    `(tab-bar-tab-inactive ((t (:inherit mode-line-inactive :slant italic))))
    `(hl-line ((t (:background ,aero-bg-alt))))
-   `(region ((t (:background ,aero-region-bg :foreground nil))))
+   `(region ((t (:background ,aero-region-bg :foreground unspecified))))
    `(highlight ((t (:inherit region))))
    `(secondary-selection ((t (:background ,aero-base0))))
    `(minibuffer-prompt ((t (:foreground ,aero-region-dark :bold t))))
