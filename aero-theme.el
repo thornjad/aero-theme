@@ -492,9 +492,10 @@
    `(message-mml ((t (:foreground ,aero-normal-green :weight bold))))
 
    ;; org-mode
-   `(org-agenda-date-today ((t (:foreground ,aero-fg
-                                :background ,aero-space-base-dimmer
-                                :weight bold :slant italic))))
+   `(org-agenda-date ((t (:foreground ,aero-fg :background ,aero-space-base-dimmer
+                          :slant italic :overline ,aero-space-base))))
+   `(org-agenda-date-today ((t (:inherit org-agenda-date :weight bold))))
+   `(org-agenda-date-weekend ((t (:inherit org-agenda-date :background ,aero-comment-bg))))
    `(org-agenda-done ((t (:foreground ,aero-normal-blue))))
    `(org-agenda-structure ((t (:inherit font-lock-comment-face))))
    `(org-archived ((t (:foreground ,aero-fg :weight bold))))
