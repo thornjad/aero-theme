@@ -225,7 +225,7 @@
    `(font-lock-builtin-face ((t (:foreground ,aero-bright-black :slant italic))))
    `(font-lock-constant-face ((t (:foreground ,aero-base4 :weight bold))))
    `(font-lock-comment-face ((t (:foreground ,aero-comment :background ,aero-comment-bg :slant italic))))
-   `(font-lock-function-name-face ((t (:foreground ,aero-fg :weight bold))))
+   `(font-lock-function-name-face ((t (:foreground ,aero-bright-orange :weight bold))))
    `(font-lock-keyword-face ((t (:foreground ,aero-faded-orange :weight bold))))
    `(font-lock-string-face ((t (:foreground ,aero-base10 :slant italic))))
    `(font-lock-variable-name-face ((t (:foreground ,aero-bright-green))))
