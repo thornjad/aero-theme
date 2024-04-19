@@ -479,26 +479,29 @@
    `(term-default-fg-color ((t (:foreground ,aero-fg))))
    `(term-default-bg-color ((t (:background ,aero-bg))))
 
-   ;; message-mode
-   `(message-header-to ((t (:inherit font-lock-variable-name-face))))
-   `(message-header-cc ((t (:inherit font-lock-variable-name-face))))
-   `(message-header-subject ((t (:foreground ,aero-bright-yellow :weight bold))))
-   `(message-header-newsgroups ((t (:foreground ,aero-bright-yellow :weight bold))))
-   `(message-header-other ((t (:inherit font-lock-variable-name-face))))
-   `(message-header-name ((t (:inherit font-lock-keyword-face))))
-   `(message-header-xheader ((t (:foreground ,aero-normal-blue))))
-   `(message-separator ((t (:inherit font-lock-comment-face))))
-   `(message-cited-text ((t (:inherit font-lock-comment-face))))
-   `(message-mml ((t (:foreground ,aero-normal-green :weight bold))))
+   ;; org-agenda
+   `(org-agenda-date ((t (:foreground ,aero-fg
+                          :background ,aero-space-base-dimmer
+                          :overline ,aero-space-base
+                          :font ,aero-theme-variable-pitch-font
+                          :height 1.14))))
+   `(org-agenda-date-today ((t (:inherit org-agenda-date
+                                :weight bold
+                                :height 1.30
+                                :overline nil))))
+   `(org-agenda-date-weekend ((t (:inherit org-agenda-date
+                                  :slant italic
+                                  :background ,aero-comment-bg
+                                  :foreground ,aero-base10))))
+   `(org-agenda-done ((t (:inherit org-done))))
+   `(org-agenda-structure ((t (:inherit font-lock-comment-face
+                               :slant italic
+                               :font ,aero-theme-variable-pitch-font
+                               :height 1.02))))
+   `(org-agenda-clocking ((t (:inherit secondary-selection
+                              :underline t))))
 
    ;; org-mode
-   `(org-agenda-date ((t (:foreground ,aero-fg :background ,aero-space-base-dimmer
-                          :slant italic :overline ,aero-space-base
-                          :font ,aero-theme-variable-pitch-font))))
-   `(org-agenda-date-today ((t (:inherit org-agenda-date :weight bold))))
-   `(org-agenda-date-weekend ((t (:inherit org-agenda-date :background ,aero-comment-bg))))
-   `(org-agenda-done ((t (:inherit org-done))))
-   `(org-agenda-structure ((t (:inherit font-lock-comment-face))))
    `(org-archived ((t (:foreground ,aero-fg :weight bold))))
    `(org-block ((t (:inherit fixed-pitch :background ,aero-base0))))
    `(org-block-begin-line ((t (:background ,aero-base0))))
@@ -537,7 +540,7 @@
    `(org-sexp-date ((t (:foreground ,aero-normal-blue :underline t))))
    `(org-special-keyword ((t (:inherit (font-lock-comment-face fixed-pitch)))))
    `(org-table ((t (:inherit fixed-pitch :foreground ,aero-normal-blue))))
-   `(org-tag ((t (:inherit (shadow fixed-pitch) :bold t :weight bold :height 0.8))))
+   `(org-tag ((t (:inherit (shadow variable-pitch) :bold t :weight bold :height 0.8))))
    `(org-time-grid ((t (:foreground ,aero-normal-green))))
    `(org-todo ((t (:foreground unspecified :weight bold :bold t))))
    `(org-done ((t (:foreground ,aero-bright-green :weight bold :bold t :strike-through t))))
