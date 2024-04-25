@@ -137,6 +137,7 @@
       (aero-comment-bg "#ecf3ec")
 
       (aero-org-label-bg "#d6d4d3")
+      (aero-org-todo-box "#919191")
       (aero-todo "#dca3a3")
       (aero-done "#afd8af")
       (aero-note "#5f7f5f")
@@ -493,7 +494,7 @@
                                   :slant italic
                                   :background ,aero-comment-bg
                                   :foreground ,aero-base10))))
-   `(org-agenda-done ((t (:inherit org-done))))
+   `(org-agenda-done ((t (:inherit org-done :box nil :height 1.0))))
    `(org-agenda-structure ((t (:inherit font-lock-comment-face
                                :slant italic
                                :font ,aero-theme-variable-pitch-font
@@ -518,12 +519,12 @@
    `(org-ellipsis ((t (:foreground ,aero-base3))))
    `(org-footnote ((t (:foreground ,aero-normal-blue :underline t))))
    `(org-formula ((t (:foreground ,aero-bright-yellow))))
-   `(org-headline-done ((t (:foreground ,aero-normal-blue :strike-through t))))
+   `(org-headline-done ((t (:foreground ,aero-comment :strike-through t))))
    `(org-hide ((t (:foreground ,aero-bg))))
    `(org-indent ((t (:inherit (org-hide fixed-pitch)))))
    `(org-latex-and-related ((t (:strike-through t))))
-   `(org-level-1 ((t (:height 1.13 :weight bold))))
-   `(org-level-2 ((t (:height 1.09 :weight bold))))
+   `(org-level-1 ((t (:height 1.23 :weight bold))))
+   `(org-level-2 ((t (:height 1.12 :weight bold))))
    `(org-level-3 ((t (:height 1.05 :weight bold))))
    `(org-level-4 ((t (:weight bold))))
    `(org-level-5 ((t (:weight bold))))
@@ -542,8 +543,10 @@
    `(org-table ((t (:inherit fixed-pitch :foreground ,aero-normal-blue))))
    `(org-tag ((t (:inherit (shadow variable-pitch) :bold t :weight bold :height 0.8))))
    `(org-time-grid ((t (:foreground ,aero-normal-green))))
-   `(org-todo ((t (:foreground unspecified :weight bold :bold t))))
-   `(org-done ((t (:foreground ,aero-bright-green :weight bold :bold t :strike-through t))))
+   `(org-todo ((t (:foreground ,aero-todo
+                   :height 0.8 :weight semibold
+                   :box (:line-width 1 :color ,aero-org-todo-box)))))
+   `(org-done ((t (:inherit org-todo :foreground ,aero-done :strike-through t :box t))))
    `(org-upcoming-deadline ((t (:inherit font-lock-keyword-face))))
    `(org-verbatim ((t (:inherit (shadow fixed-pitch)))))
    `(org-warning ((t (:foreground ,aero-bright-red :weight bold :underline nil :bold t))))
@@ -552,13 +555,8 @@
    `(org-modern-label ((t (:weight regular :underline nil
                            :height 0.8 :background ,aero-org-label-bg
                            :box (:line-width 1 :color ,aero-org-label-bg)))))
-   `(org-modern-todo ((t (:inherit (org-todo org-modern-label)
-                          :weight semibold :foreground ,aero-normal-black
-                          :background ,aero-todo
-                          :box (:line-width 1 :color ,aero-todo)))))
-   `(org-modern-done ((t (:inherit org-modern-label :foreground ,aero-normal-black
-                          :background ,aero-done
-                          :box (:line-width 1 :color ,aero-done)))))
+   `(org-modern-todo ((t (:inherit org-todo))))
+   `(org-modern-done ((t (:inherit org-done))))
    `(org-modern-date-active ((t (:inherit org-modern-label :box nil))))
    `(org-modern-date-inactive ((t (:inherit org-modern-date-active))))
    `(org-modern-time-active ((t (:inherit org-modern-date-active
@@ -583,11 +581,15 @@
    `(ein:cell-output-prompt ((t (:foreground ,aero-normal-cyan :slant italic :box ,aero-base1))))
 
    ;; elfeed
-   `(elfeed-search-title-face ((t (:foreground ,aero-base2  ))))
-   `(elfeed-search-unread-title-face ((t (:foreground ,aero-fg))))
-   `(elfeed-search-date-face ((t (:inherit font-lock-builtin-face :underline t))))
-   `(elfeed-search-feed-face ((t (:inherit font-lock-variable-name-face))))
-   `(elfeed-search-tag-face ((t (:inherit font-lock-keyword-face))))
+   `(elfeed-search-title-face ((t (:foreground ,aero-comment
+                                   :strike-through t))))
+   `(elfeed-search-unread-title-face ((t (:foreground ,aero-fg
+                                          :strike-through nil))))
+   `(elfeed-search-date-face ((t (:foreground ,aero-comment
+                                  :slant italic))))
+   `(elfeed-search-feed-face ((t (:inherit font-lock-variable-name-face
+                                  :slant italic))))
+   `(elfeed-search-tag-face ((t (:inherit org-tag))))
    `(elfeed-search-last-update-face ((t (:inherit font-lock-comment-face))))
    `(elfeed-search-unread-count-face ((t (:inherit font-lock-comment-face))))
    `(elfeed-search-filter-face ((t (:inherit font-lock-string-face))))
