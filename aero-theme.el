@@ -494,7 +494,7 @@
                                   :slant italic
                                   :background ,aero-comment-bg
                                   :foreground ,aero-base10))))
-   `(org-agenda-done ((t (:inherit org-done :box nil :height 1.0))))
+   `(org-agenda-done ((t (:inherit org-done :box nil :strike-through t))))
    `(org-agenda-structure ((t (:inherit font-lock-comment-face
                                :slant italic
                                :font ,aero-theme-variable-pitch-font
@@ -523,7 +523,7 @@
    `(org-hide ((t (:foreground ,aero-bg))))
    `(org-indent ((t (:inherit (org-hide fixed-pitch)))))
    `(org-latex-and-related ((t (:strike-through t))))
-   `(org-level-1 ((t (:height 1.23 :weight bold))))
+   `(org-level-1 ((t (:height 1.26 :weight bold))))
    `(org-level-2 ((t (:height 1.12 :weight bold))))
    `(org-level-3 ((t (:height 1.05 :weight bold))))
    `(org-level-4 ((t (:weight bold))))
