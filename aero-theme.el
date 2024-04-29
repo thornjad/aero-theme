@@ -288,7 +288,7 @@
 
    ;; eldoc-box
    `(eldoc-box-body ((t (:background ,aero-act1))))
-   `(eldoc-box-border ((t (:background ,aero-space-base))))
+   `(eldoc-box-border ((t (:background ,aero-act1))))
 
    ;; Displaying formfeed chars
    `(page-break-lines ((t (:foreground ,aero-base2))))
