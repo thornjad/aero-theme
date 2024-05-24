@@ -548,7 +548,7 @@
                    :box (:line-width 1 :color ,aero-org-todo-box)))))
    `(org-done ((t (:inherit org-todo :foreground ,aero-done :strike-through t :box t))))
    `(org-upcoming-deadline ((t (:inherit font-lock-keyword-face))))
-   `(org-verbatim ((t (:inherit (shadow fixed-pitch)))))
+   `(org-verbatim ((t (:inherit fixed-pitch :slant italic))))
    `(org-warning ((t (:foreground ,aero-bright-red :weight bold :underline nil :bold t))))
 
    ;; org-modern
