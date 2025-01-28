@@ -1,7 +1,7 @@
 ;;; aero-dark-theme.el --- A practical theme -*- lexical-binding: t -*-
 ;;
 ;; Author: Jade Michael Thornton
-;; Copyright (c) 2019-2023 Jade Michael Thornton
+;; Copyright (c) 2019-2025 Jade Michael Thornton
 ;; URL: https://gitlab.com/thornjad/aero-theme
 ;; Package-Requires: ((emacs "25.1"))
 ;; Version: 1.3.0
@@ -53,11 +53,11 @@
 
 (defcustom aero-theme-variable-pitch-font
   (if (window-system)
-    (cond ((x-list-fonts "Ubuntu Light") "Ubuntu Light")
-          ((x-list-fonts "Source Sans Pro") "Source Sans Pro")
-          ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
-          ((x-list-fonts "Roboto") "Roboto")
-          (t "Sans Serif"))
+      (cond ((x-list-fonts "Ubuntu Light") "Ubuntu Light")
+            ((x-list-fonts "Source Sans Pro") "Source Sans Pro")
+            ((x-list-fonts "Fira Code Retina") "Fira Code Retina")
+            ((x-list-fonts "Roboto") "Roboto")
+            (t "Sans Serif"))
     "Sans Serif")
   "Base variable pitch font. Default depends on installed fonts."
   :group 'aero-theme)
