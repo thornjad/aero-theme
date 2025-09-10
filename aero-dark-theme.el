@@ -80,10 +80,10 @@
       (aero-grey2 "#6b6b6b")
       (aero-grey3 "#979797")
       (aero-grey4 "#9295a0")
-      (aero-grey5 "#b4b9c1")
+      (aero-grey5 "grey25")
       (aero-grey6 "#444155")
       (aero-space-base "#b2b2b2")
-      (aero-space-base-dim "#686868")
+      (aero-space-base-dim "#484848")
       (aero-bg-magenta "#5d4d7a")
       ;; (aero-space-magenta "#bc6ec5")
 
@@ -131,7 +131,7 @@
    `(cursor ((t (:background ,aero-fg))))
    `(mode-line ((t (:background ,aero-bg-alt :foreground ,aero-space-base))))
    `(mode-line-active ((t (:inherit mode-line))))
-   `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
+   `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-grey6))))
    `(header-line ((t (:inherit mode-line :overline nil :underline nil
                       :box (:line-width 2 :color ,aero-bg-magenta) :height ,aero-theme-font-height))))
    `(tab-bar ((t (:inherit mode-line-inactive))))
@@ -148,12 +148,12 @@
    `(shadow ((t (:foreground ,aero-grey2))))
    `(trailing-whitespace ((t (:background ,aero-bright-red))))
    `(escape-glyph ((t (:foreground ,aero-normal-blue))))
-   `(highlight ((t (:background ,aero-grey2 :foreground ,aero-fg))))
+   `(highlight ((t (:background ,aero-grey5 :foreground ,aero-fg))))
    `(homoglyph ((t (:foreground ,aero-bright-yellow))))
    `(match ((t (:foreground ,aero-normal-black :background ,aero-normal-blue))))
 
    ;; Built-in syntax
-   `(font-lock-builtin-face ((t (:foreground ,aero-grey5 :slant italic))))
+   `(font-lock-builtin-face ((t (:foreground ,aero-normal-magenta :slant italic))))
    `(font-lock-constant-face ((t (:foreground ,aero-normal-magenta))))
    `(font-lock-comment-face ((,class (:foreground ,aero-grey4 :background ,aero-bg :slant italic))))
    `(font-lock-function-name-face ((t (:foreground ,aero-bright-orange))))
@@ -182,7 +182,7 @@
    `(aero/modeline-not-modified ((t (:inherit success :height 180))))
    `(aero/modeline-read-only ((t (:inherit warning :height 180))))
    `(aero/modeline-bar ((t (:background ,aero-bg-magenta))))
-   `(aero/modeline-bar-inactive ((t (:background ,aero-space-base-dim))))
+   `(aero/modeline-bar-inactive ((t (:background ,aero-grey6))))
 
    ;; centaur tabs
    `(centaur-tabs-default ((t (:background ,aero-grey0 :foreground ,aero-grey4))))
