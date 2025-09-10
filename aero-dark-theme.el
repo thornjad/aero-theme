@@ -131,7 +131,7 @@
    `(cursor ((t (:background ,aero-fg))))
    `(mode-line ((t (:background ,aero-bg-alt :foreground ,aero-space-base))))
    `(mode-line-active ((t (:inherit mode-line))))
-   `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-grey6))))
+   `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-normal-magenta))))
    `(header-line ((t (:inherit mode-line :overline nil :underline nil
                       :box (:line-width 2 :color ,aero-bg-magenta) :height ,aero-theme-font-height))))
    `(tab-bar ((t (:inherit mode-line-inactive))))
