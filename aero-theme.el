@@ -536,7 +536,7 @@
    `(org-meta-line ((t (:inherit (shadow font-lock-comment-face fixed-pitch)))))
    `(org-property-value ((t (:inherit fixed-pitch))))
    `(org-scheduled ((t (:foreground ,aero-fg))))
-   `(org-scheduled-previously ((t (:foreground ,aero-faded-orange))))
+   `(org-scheduled-previously ((t (:foreground ,aero-fg))))
    `(org-scheduled-today ((t (:inherit org-scheduled))))
    `(org-sexp-date ((t (:foreground ,aero-normal-blue :underline t))))
    `(org-special-keyword ((t (:inherit (font-lock-comment-face fixed-pitch)))))
