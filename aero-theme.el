@@ -201,9 +201,9 @@
      ((t (:inherit mode-line :height ,aero-theme-font-height
           :box (:line-width 1 :color ,aero-space-base-dimmer)
           :background ,aero-space-base-even-dimmer :underline nil :overline nil))))
-   `(tab-bar ((t (:inherit mode-line-inactive :overline nil :box (:line-width 3 :color ,(if-solaire aero-bg-alt aero-bg))))))
-   `(tab-bar-tab ((t (:inherit mode-line :overline ,aero-space-base))))
-   `(tab-bar-tab-inactive ((t (:inherit mode-line-inactive :slant italic))))
+   `(tab-bar ((t (:inherit mode-line-inactive :overline nil :box nil))))
+   `(tab-bar-tab ((t (:inherit mode-line :overline ,aero-space-base :height 1.0 :box nil))))
+   `(tab-bar-tab-inactive ((t (:inherit mode-line-inactive :slant italic :height 1.0 :box nil))))
    `(hl-line ((t (:background ,aero-bg-alt))))
    `(region ((t (:background ,aero-region-bg :foreground unspecified))))
    `(highlight ((t (:inherit region))))
