@@ -480,6 +480,24 @@
    `(term-default-fg-color ((t (:foreground ,aero-fg))))
    `(term-default-bg-color ((t (:background ,aero-bg))))
 
+   ;; vterm - match iTerm "Ubuntu" colors
+   `(vterm-color-black ((t (:foreground "#000000" :background ,aero-bg))))
+   `(vterm-color-red ((t (:foreground "#cc0000" :background ,aero-faded-red-dim))))
+   `(vterm-color-green ((t (:foreground "#4e9a05" :background ,aero-faded-green-dim))))
+   `(vterm-color-yellow ((t (:foreground "#c4a000" :background ,aero-faded-orange-dim))))
+   `(vterm-color-blue ((t (:foreground "#3464a4" :background ,aero-bg))))
+   `(vterm-color-magenta ((t (:foreground "#74507a" :background ,aero-bg))))
+   `(vterm-color-cyan ((t (:foreground "#05989a" :background ,aero-bg))))
+   `(vterm-color-white ((t (:foreground "#ececec" :background ,aero-bg))))
+   `(vterm-color-bright-black ((t (:foreground "#545753" :background ,aero-bg))))
+   `(vterm-color-bright-red ((t (:foreground "#ee2828" :background ,aero-faded-red-dim))))
+   `(vterm-color-bright-green ((t (:foreground "#8ae134" :background ,aero-faded-green-dim))))
+   `(vterm-color-bright-yellow ((t (:foreground "#fce94e" :background ,aero-faded-orange-dim))))
+   `(vterm-color-bright-blue ((t (:foreground "#719ece" :background ,aero-bg))))
+   `(vterm-color-bright-magenta ((t (:foreground "#ad7ea7" :background ,aero-bg))))
+   `(vterm-color-bright-cyan ((t (:foreground "#34e1e1" :background ,aero-bg))))
+   `(vterm-color-bright-white ((t (:foreground "#ffffff" :background ,aero-bg))))
+
    ;; org-agenda
    `(org-agenda-date ((t (:foreground ,aero-fg
                           :background ,aero-space-base-dimmer
