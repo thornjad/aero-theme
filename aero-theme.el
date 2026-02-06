@@ -526,6 +526,7 @@
    `(org-block-begin-line ((t (:slant italic :background ,aero-base0))))
    `(org-block-end-line ((t (:slant italic :background ,aero-base0))))
    `(org-code ((t (:inherit fixed-pitch :background ,aero-base0))))
+   `(org-quote ((t (:inherit variable-pitch :slant italic))))
    `(org-column ((t (:background ,aero-normal-black))))
    `(org-column-title ((t (:background ,aero-normal-black :underline t :weight bold))))
    `(org-date ((t (:foreground ,aero-normal-blue :underline t))))
