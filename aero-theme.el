@@ -526,7 +526,7 @@
    `(org-block-begin-line ((t (:slant italic :background ,aero-base0))))
    `(org-block-end-line ((t (:slant italic :background ,aero-base0))))
    `(org-code ((t (:inherit fixed-pitch :background ,aero-base0))))
-   `(org-quote ((t (:inherit variable-pitch :slant italic))))
+   `(org-quote ((t (:inherit org-block :slant italic :font ,aero-theme-variable-pitch-font))))
    `(org-column ((t (:background ,aero-normal-black))))
    `(org-column-title ((t (:background ,aero-normal-black :underline t :weight bold))))
    `(org-date ((t (:foreground ,aero-normal-blue :underline t))))
@@ -560,7 +560,7 @@
    `(org-sexp-date ((t (:foreground ,aero-normal-blue :underline t))))
    `(org-special-keyword ((t (:inherit (font-lock-comment-face fixed-pitch)))))
    `(org-table ((t (:inherit fixed-pitch :foreground ,aero-normal-blue))))
-   `(org-tag ((t (:inherit (shadow variable-pitch) :bold t :weight bold :height 0.8))))
+   `(org-tag ((t (:inherit (shadow variable-pitch) :background ,aero-ttip-sel :bold t :weight bold :height 0.8))))
    `(org-time-grid ((t (:foreground ,aero-normal-green))))
    `(org-todo ((t (:foreground ,aero-todo :height 0.8 :weight semibold :underline t))))
    `(org-done ((t (:inherit org-todo :foreground ,aero-done :strike-through t :box t))))
@@ -572,6 +572,7 @@
    `(org-modern-label ((t (:weight regular :underline nil
                            :height 0.8 :background ,aero-org-label-bg
                            :box (:line-width 1 :color ,aero-org-label-bg)))))
+   `(org-modern-tag ((t (:inherit org-tag))))
    `(org-modern-todo ((t (:inherit org-todo))))
    `(org-modern-done ((t (:inherit org-done))))
    `(org-modern-date-active ((t (:inherit org-modern-label :box nil))))
