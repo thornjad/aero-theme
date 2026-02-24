@@ -560,7 +560,7 @@
    `(org-sexp-date ((t (:foreground ,aero-normal-blue :underline t))))
    `(org-special-keyword ((t (:inherit (font-lock-comment-face fixed-pitch)))))
    `(org-table ((t (:inherit fixed-pitch :foreground ,aero-normal-blue))))
-   `(org-tag ((t (:inherit (shadow variable-pitch) :background ,aero-ttip-sel :bold t :weight bold :height 0.8))))
+   `(org-tag ((t (:inherit (shadow variable-pitch) :bold t :weight bold :height 0.8))))
    `(org-time-grid ((t (:foreground ,aero-normal-green))))
    `(org-todo ((t (:foreground ,aero-todo :height 0.8 :weight semibold :underline t))))
    `(org-done ((t (:inherit org-todo :foreground ,aero-done :strike-through t :box t))))
