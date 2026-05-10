@@ -132,7 +132,7 @@
       (aero-ttip "#8c799f")
       (aero-ttip-sel "#c8c6dd")
       (aero-ttip-bg "#f2eff2")
-      (aero-cursor-bg "#1B1809")
+      (aero-cursor-bg "#B68A14")
       (aero-comment "#829293")
       (aero-comment-bg "#ecf3ec")
 
@@ -180,7 +180,8 @@
       ;; (aero-brilliant-blue    "#00005f")
       ;; (aero-brilliant-cyan    "#46d9ff")
       ;; (aero-brilliant-red       "#5f0000")
-      (aero-space-magenta "#a45bad"))
+      (aero-space-magenta "#a45bad")
+      (aero-pulse-bg "#dce8f4"))
   (custom-theme-set-faces
    'aero
    `(default ((t (:background ,(if-solaire aero-bg-alt aero-bg)
@@ -194,9 +195,9 @@
    `(mode-line
      ((t (:background ,aero-modeline-bg
           :foreground ,aero-space-base :height ,aero-theme-font-height
-          :underline nil :overline nil :box (:line-width 6 :style flat-button)))))
+          :underline nil :overline ,aero-normal-blue :box (:line-width 6 :style flat-button)))))
    `(mode-line-active ((t (:inherit mode-line))))
-   `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim))))
+   `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-space-base-dim :overline nil))))
    `(header-line
      ((t (:inherit mode-line :height ,aero-theme-font-height
           :box (:line-width 1 :color ,aero-space-base-dimmer)
@@ -238,6 +239,7 @@
    `(error ((t (:foreground ,aero-bright-red :bold t))))
    `(success ((t (:foreground ,aero-normal-green :bold t))))
    `(warning ((t (:foreground ,aero-bright-yellow :bold t))))
+   `(pulse-highlight-start-face ((t (:background ,aero-pulse-bg))))
 
    ;; Aero modeline
    `(aero/modeline-evil-normal ((t (:background ,aero-normal-cyan :foreground ,aero-bg :bold t))))
@@ -544,12 +546,12 @@
    `(org-hide ((t (:foreground ,aero-bg))))
    `(org-indent ((t (:inherit (org-hide fixed-pitch)))))
    `(org-latex-and-related ((t (:strike-through t))))
-   `(org-level-1 ((t (:height 1.26 :weight bold))))
-   `(org-level-2 ((t (:height 1.12 :weight bold))))
-   `(org-level-3 ((t (:height 1.05 :weight bold))))
-   `(org-level-4 ((t (:weight bold))))
-   `(org-level-5 ((t (:weight bold))))
-   `(org-level-6 ((t (:weight bold))))
+   `(org-level-1 ((t (:weight bold :foreground ,aero-bright-blue :overline ,aero-bright-blue))))
+   `(org-level-2 ((t (:weight bold :foreground ,aero-normal-green :overline ,aero-normal-green))))
+   `(org-level-3 ((t (:weight bold :foreground ,aero-normal-teal :overline ,aero-normal-teal))))
+   `(org-level-4 ((t (:weight bold :foreground ,aero-bright-magenta :overline ,aero-bright-magenta))))
+   `(org-level-5 ((t (:weight bold :foreground ,aero-faded-orange :overline ,aero-faded-orange))))
+   `(org-level-6 ((t (:weight bold :foreground ,aero-space-base-dim :overline ,aero-space-base-dim))))
    `(org-level-7 ((t (:weight bold))))
    `(org-level-8 ((t (:weight bold))))
    `(org-link ((t (:foreground ,aero-normal-blue :underline t))))

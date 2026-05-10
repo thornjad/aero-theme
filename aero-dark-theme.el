@@ -128,10 +128,10 @@
    `(variable-pitch
      ((t :font ,aero-theme-variable-pitch-font)))
    `(fringe ((t (:background ,(if-solaire aero-bg-alt aero-bg)))))
-   `(cursor ((t (:background ,aero-fg))))
-   `(mode-line ((t (:background ,aero-bg-alt :foreground ,aero-space-base))))
+   `(cursor ((t (:background "#B68A14"))))
+   `(mode-line ((t (:background ,aero-bg-alt :foreground ,aero-space-base :overline ,aero-normal-blue))))
    `(mode-line-active ((t (:inherit mode-line))))
-   `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-normal-magenta))))
+   `(mode-line-inactive ((t (:inherit mode-line :foreground ,aero-normal-magenta :overline nil))))
    `(header-line ((t (:inherit mode-line :overline nil :underline nil
                       :box (:line-width 2 :color ,aero-bg-magenta) :height ,aero-theme-font-height))))
    `(tab-bar ((t (:inherit mode-line-inactive))))
@@ -236,7 +236,7 @@
    `(fill-column-indicator ((t (:foreground ,aero-grey05))))
 
    ;; pulse
-   `(pulse-highlight-start-face ((t (:background ,aero-bg-magenta))))
+   `(pulse-highlight-start-face ((t (:background ,aero-normal-blue))))
 
    ;; smartparens
    `(sp-pair-overlay-face ((t (:background ,aero-grey1))))
@@ -440,12 +440,12 @@
    `(org-hide ((t (:foreground ,aero-bg))))
    `(org-indent ((t (:inherit (org-hide fixed-pitch)))))
    `(org-latex-and-related ((t (:foreground ,aero-normal-blue))))
-   `(org-level-1 ((t (:foreground ,aero-normal-blue :height 1.2 :weight bold))))
-   `(org-level-2 ((t (:foreground ,aero-bright-yellow :height 1.15 :weight bold))))
-   `(org-level-3 ((t (:foreground ,aero-normal-magenta :height 1.1 :weight bold))))
-   `(org-level-4 ((t (:foreground ,aero-bright-red :height 1.05 :weight bold))))
-   `(org-level-5 ((t (:foreground ,aero-normal-green :weight bold))))
-   `(org-level-6 ((t (:foreground ,aero-normal-blue :weight bold))))
+   `(org-level-1 ((t (:foreground ,aero-normal-blue :weight bold :overline ,aero-normal-blue))))
+   `(org-level-2 ((t (:foreground ,aero-bright-yellow :weight bold :overline ,aero-bright-yellow))))
+   `(org-level-3 ((t (:foreground ,aero-normal-magenta :weight bold :overline ,aero-normal-magenta))))
+   `(org-level-4 ((t (:foreground ,aero-bright-red :weight bold :overline ,aero-bright-red))))
+   `(org-level-5 ((t (:foreground ,aero-normal-green :weight bold :overline ,aero-normal-green))))
+   `(org-level-6 ((t (:foreground ,aero-normal-blue :weight bold :overline ,aero-normal-blue))))
    `(org-level-7 ((t (:foreground ,aero-normal-blue :weight bold))))
    `(org-level-8 ((t (:foreground ,aero-bright-yellow :weight bold))))
    `(org-link ((t (:foreground ,aero-normal-blue :underline t))))
